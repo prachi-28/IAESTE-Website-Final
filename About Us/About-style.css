@@ -1,0 +1,374 @@
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#title
+{
+	background-color:  #002c42;
+	color: #fff;
+}
+
+.navnav {
+    padding-right: 0;
+    padding-left: 0;
+    padding: 3% 18% 3%;
+}
+body > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    padding: 3% 18% 3%;
+}
+
+.description-card{
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25), 0px 1px 20px 0px rgba(0,0,0,0.22);
+}
+
+.navbar-brand
+{
+	font-family: "ubuntu";
+	font-size: 2rem;
+	line-height: 1.5;
+	font-weight: bold;
+	position: relative;
+	right: 100px;
+
+}
+
+.navbar
+{
+  padding: 0px 0 1.5rem;
+}
+
+.nav-item {
+	padding: 0 3px;
+}
+
+.nav-link
+{
+	font-size: 1.2rem;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+
+
+.title-image
+{
+	width: 60%;
+
+	position: absolute;
+	right: 20%;
+
+}
+
+.logo
+{
+	height:06px;
+	width: 200px;
+	position: relative;
+	left:100px;
+}
+
+
+.background {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    height: 120%;
+    width: 120%;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+}
+
+.row > p{
+    margin: 0% 2% 2% 2%;
+    font-size: 147%;
+}
+
+.col-lg {
+    display: flex;
+}
+
+#description{
+    margin: 2% 2%;
+}
+
+.team-section{
+  background: #f1f1f1;
+  text-align: center;
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  color: #333;
+  overflow: hidden;
+}
+.team-section h1{
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  padding-bottom: 10px;
+}
+.pe{
+  float: left;
+  width: calc(100% / 3);
+  overflow: hidden;
+  padding: 40px 0;
+  transition: 0.4s;
+}
+
+
+.pe:hover{
+  background: #ddd;
+}
+.pe img{
+  width: 120px;
+  height: 120px;
+}
+.p-name{
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+.p-des{
+  font-style: italic;
+  color: #3498db;
+}
+.p-sm{
+  margin-top: 12px;
+}
+.p-sm a{
+  margin: 0 4px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+}
+.p-sm a:hover{
+  transform: scale(1.3);
+}
+.p-sm a i{
+  color: #333;
+  line-height: 30px;
+}
+@media screen and (max-width:600px) {
+  .pe{
+    width: 100%;
+  }
+}
+
+
+.footer {
+    z-index: 1;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.charts_orb {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: arial;
+    color: white;
+    width: 100%;
+    margin: 2% 0;
+  }
+  .charts_orb .orb {
+    padding: 5% 3%;
+  }
+  .charts_orb .orb .orb_graphic {
+    position: relative;
+  }
+  .charts_orb .orb .orb_graphic .orb_value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  .charts_orb .orb .orb_label {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+  }
+  .charts_orb .orb_graphic > svg {
+    width: 110px;
+    height: 110px;
+  }
+  .charts_orb .orb_graphic > svg circle {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 314.16, 314.16;
+    stroke-width: 5;
+    fill: transparent;
+    r: 50;
+    cx: 55;
+    cy: 55;
+  }
+  .charts_orb .orb_graphic > svg circle.fill {
+    stroke: #d3d3d3;
+  }
+  .charts_orb .orb_graphic > svg circle.progress {
+    stroke: #ff6b00;
+    transition: stroke-dashoffset 0.35s;
+    stroke-dashoffset: 214.16;
+    -webkit-animation: NAME-YOUR-ANIMATION 1.5s forwards;
+    -webkit-animation-timing-function: linear;
+  }
+  @-webkit-keyframes NAME-YOUR-ANIMATION {
+    0% {
+      stroke-dashoffset: 314.16;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  .orb_value {
+    color: black;
+  }
+
+  .orb_label{
+      color: black;
+  }
+
+  #our-team {
+      background-color: #002c42;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .our-team-heading {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 509%;
+    margin: 5%;
+    padding: 4%;
+    
+  }
+
+  u {
+      color: white;
+  }
+
+  .row {
+      align-items: center;
+  }
+
+  .senior-team > .col-lg{
+    margin: 0 0 0 8.75%;
+  }
+
+  .junior-team > .col-lg{
+      margin: 0 0 0 5%;
+  }
+
+  .fade-in-top {
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .senior-team > .col-lg{
+        justify-content: center;
+        margin: 0 0 0 0;
+      }
+
+    .junior-team > .col-lg {
+        justify-content: center;
+        margin: 0 0 0 0;
+    }
+
+  }
+
+
+  #lc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10vh;
+    height: auto;
+    background: url('../images/team/lc.jpg') 0 0 no-repeat;
+    position: relative;
+}
+
+#lc :before {
+    background-size: 100%;
+    transform: rotate(90deg);
+}
+
+#lc p {
+    font-size: 25px;
+    font-family: 'Avenir-Light';
+   
+    text-align: center;
+}
+
+#footer {
+  padding: 2% 15%;
+  color: white;
+  background-color: var(--main-blue);
+  text-align: center;
+}
+
+.social-icon {
+ /* color: white;*/
+  margin: 20px 15px;
+}
+
+.footer_text {
+  font-size: 1rem;
+  /*color: #8f8f8f;*/
+}
+
+.figures {
+  font-size: 1.5rem;
+}
+
+
+  
