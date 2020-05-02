@@ -1,3 +1,7 @@
+:root {
+  --main-blue: #002c42;
+}
+
 #title
 {
   background-color:  #002c42;
@@ -121,7 +125,7 @@ h3
 	font-family: 'Montserrat-Bold', sans-serif; 
 }
 
-p
+.quote
 {
 	color: #8f8f8f;
 }
@@ -172,14 +176,63 @@ p {
   height: 450px;
 }
 
-.intro
+
+/* 
+  About Us Section with Stats
+*/
+#about-us
 {
-background-image: url("assets/images/about.jpg");
-width: 100%;
-background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-   /* background-position: center center; */
+  background-image: url("assets/images/about.jpg");
+  background-size:     cover;                
+  background-repeat:   no-repeat;
+  padding:5vh 6vw;
+
+  display:grid;
+  grid-template-columns: 40% 60%;
 }
+#about-us-header{
+  /* font-weight: 500; */
+  grid-column: 1/2;
+}
+#about-us-text{
+  padding:0;
+  margin:0;
+  grid-column: 1/2;
+}
+#stat-wrapper{
+  text-align: center;
+}
+
+.stat{
+  text-align:left;
+  padding:0 5vw;
+}
+.stat > h5{
+  margin:0;
+  font-size:1em;
+  margin-bottom:1vh;
+}
+.stat> div{
+  width:100%;
+  background-color: white;
+  margin-bottom:3vh;
+  padding:0;
+}
+
+.stat-value{
+  background-color: rgb(172, 175, 170);
+  text-align: right;
+  line-height: 100%;
+  font-size:0.8em;
+  padding: 6px;
+}
+#country-stat{
+  width:86%;
+}
+#LC-stat{
+  width:75%;
+}
+
 figure {
   position: absolute;
   width: 400%;
