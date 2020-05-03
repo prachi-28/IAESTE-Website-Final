@@ -1,0 +1,192 @@
+:root {
+  --main-blue: #002c42;
+  --map-gradient-inner: #16c6ee;
+  --map-gradient-outer: #002385;
+  --hover-colour: white;
+  --list-dropdown: #003d5c;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat-Black", sans-serif;
+  width: 100%;
+}
+
+/* TitleSection */
+
+#title {
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.container-fluid {
+  padding: 3% 5% 4vh 5%;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+  position: relative;
+  right: 100px;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 3px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light", sans-serif;
+}
+
+.title-image {
+  width: 60%;
+  position: absolute;
+  right: 20%;
+}
+
+.logo {
+  height: 60px;
+  width: 200px;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+/* 
+Testimonial Section ------------->
+*/
+#testimonials {
+  text-align: center;
+  background-color: var(--main-blue);
+  color: #fff;
+  padding: 3vh 0 4vh 0;
+}
+
+#map-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+#world-map {
+  grid-column: 2;
+  padding: 0 min(10px, 3vw);
+  width: 60vw;
+  height: auto;
+  fill: url(#map-gradient) rgba(255, 255, 255, 0.651);
+  box-sizing: border-box;
+}
+.land:hover {
+  cursor: pointer;
+}
+
+#info {
+  grid-column: 1;
+  width: 40vw;
+  color: black;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.continent-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: none;
+  overflow-y: scroll;
+  padding-top: 20px;
+}
+
+.continent-name {
+  background-color: white;
+  margin: auto;
+  padding: 4px 16px;
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.country-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.country {
+  width: 29%;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 3vh 0;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.down-arrow {
+  position: absolute;
+  right: 4px;
+}
+.LC-list {
+  border-top: 1px solid lightgrey;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  display: none;
+
+  padding: 1vh 0 2vh 0;
+  margin: 0;
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+  z-index: 10;
+  color: black;
+}
+
+.country:hover {
+  border-radius: 4px 4px 0 0;
+  z-index: 15;
+}
+.country:hover .LC-list {
+  display: inline;
+}
+
+/* Footer */
+
+#footer {
+  padding: 2% 15%;
+  color: white;
+  background-color: var(--main-blue);
+  text-align: center;
+}
+
+.social-icon {
+  color: white;
+  margin: 20px 15px;
+}
+
+.footer_text {
+  font-size: 1rem;
+  color: #8f8f8f;
+}
+
+.figures {
+  font-size: 1.5rem;
+}
