@@ -28,11 +28,12 @@ h3 {
 
 #title {
   color: #fff;
-  padding: initial;
+  background-color: #002c42;
+  padding: 0;
 }
 
 .container-fluid {
-  padding: 3% 5% 4vh 5%;
+  padding: 3% 5% 3% 5%;
   box-sizing: border-box;
 }
 
@@ -42,11 +43,10 @@ h3 {
   line-height: 1.5;
   font-weight: bold;
   position: relative;
-  right: 100px;
 }
 
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 0;
 }
 
 .nav-item {
@@ -67,8 +67,6 @@ h3 {
 .logo {
   height: 60px;
   width: 200px;
-  opacity: 1;
-  margin-top: 20px;
 }
 
 /* 
