@@ -2,49 +2,41 @@
   --main-blue: #002c42;
 }
 
-#title
-{
-  background-color:  #002c42;
+#title {
+  background-color: #002c42;
   color: #fff;
 }
 
-
-h1
-{
-	font-family: 'Montserrat-Black', sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
+h1 {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.container-fluid
-{
-  padding: 3% 15% ;
+.container-fluid {
+  padding: 3% 15%;
 }
 
-body
-{
-	font-family: 'Montserrat-Black', sans-serif;
+body {
+  font-family: "Montserrat-Black", sans-serif;
 }
 
 .navnav {
-    padding-right: 0;
-    padding-left: 0;
-    padding: 3% 18% 3%;
+  padding-right: 0;
+  padding-left: 0;
+  padding: 3% 18% 3%;
 }
 
-.navbar-brand
-{
+.navbar-brand {
   font-family: "ubuntu";
   font-size: 2rem;
   line-height: 1.5;
   font-weight: bold;
   position: relative;
   right: 100px;
-
 }
 
-.navbar
-{
+.navbar {
   padding: 0px 0 1.5rem;
 }
 
@@ -52,97 +44,73 @@ body
   padding: 0 3px;
 }
 
-.nav-link
-{
+.nav-link {
   font-size: 1.2rem;
-  font-family: 'Montserrat-Light', sans-serif;
+  font-family: "Montserrat-Light", sans-serif;
 }
-.logo
-{
-  height:06px;
+.logo {
+  height: 06px;
   width: 200px;
   position: relative;
-  left:100px;
+  left: 100px;
 }
 
-
-
-
-
-
-
 #landing {
-    background-image: url("assets/images/landing-back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100vw 100vh;
-    width: 100%;
-    height: 100%;
+  background-image: url("assets/images/landing-back.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 #landing-front {
-    display: block;
-    height: 35%;
-    width: 60%; 
-    padding-top: 5%;
-    margin: auto;
-    position: relative;
-    bottom: 100px;
+  display: block;
+  height: 35%;
+  width: 60%;
+  padding-top: 5%;
+  margin: auto;
+  position: relative;
+  bottom: 100px;
 }
 
 #landing-subtitle {
-    display: block;
-    height: 30%;
-    width: 40%;
-    margin: auto;
-    position: relative;
-    bottom: 100px;
+  display: block;
+  height: 30%;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  bottom: 100px;
 }
 
-
-
-
-
-#features
-{
-	padding: 7% 15%;
-	background-color: #fff;
-	position: relative;
-	z-index: 1;
-
-	
-
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
-.feature-box
-{
-	text-align: center;
-	padding: 5%;
+.feature-box {
+  text-align: center;
+  padding: 5%;
 }
 
-h3
-{
-	font-family: 'Montserrat-Bold', sans-serif; 
+h3 {
+  font-family: "Montserrat-Bold", sans-serif;
 }
 
-.quote
-{
-	color: #8f8f8f;
+.quote {
+  color: #8f8f8f;
 }
 
-.icon
-{
-	color:  #002c42;
-	
-	margin-bottom: 1rem;
-	
+.icon {
+  color: #002c42;
+
+  margin-bottom: 1rem;
 }
 
-
-
-.icon:hover
-{
-	color: #0d2f40 ;
+.icon:hover {
+  color: #0d2f40;
 }
 
 img {
@@ -157,7 +125,7 @@ body {
 
 p {
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
   padding: 1em;
 }
@@ -176,61 +144,59 @@ p {
   height: 450px;
 }
 
-
 /* 
   About Us Section with Stats
 */
-#about-us
-{
+#about-us {
   background-image: url("assets/images/about.jpg");
-  background-size:     cover;                
-  background-repeat:   no-repeat;
-  padding:5vh 6vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5vh 6vw;
 
-  display:grid;
+  display: grid;
   grid-template-columns: 40% 60%;
 }
-#about-us-header{
+#about-us-header {
   /* font-weight: 500; */
   grid-column: 1/2;
 }
-#about-us-text{
-  padding:0;
-  margin:0;
+#about-us-text {
+  padding: 0;
+  margin: 0;
   grid-column: 1/2;
 }
-#stat-wrapper{
+#stat-wrapper {
   text-align: center;
 }
 
-.stat{
-  text-align:left;
-  padding:0 5vw;
+.stat {
+  text-align: left;
+  padding: 0 5vw;
 }
-.stat > h5{
-  margin:0;
-  font-size:1em;
-  margin-bottom:1vh;
+.stat > h5 {
+  margin: 0;
+  font-size: 1em;
+  margin-bottom: 1vh;
 }
-.stat> div{
-  width:100%;
+.stat > div {
+  width: 100%;
   background-color: white;
-  margin-bottom:3vh;
-  padding:0;
+  margin-bottom: 3vh;
+  padding: 0;
 }
 
-.stat-value{
+.stat-value {
   background-color: rgb(172, 175, 170);
   text-align: right;
   line-height: 100%;
-  font-size:0.8em;
+  font-size: 0.8em;
   padding: 6px;
 }
-#country-stat{
-  width:86%;
+#country-stat {
+  width: 86%;
 }
-#LC-stat{
-  width:75%;
+#LC-stat {
+  width: 75%;
 }
 
 figure {
@@ -252,23 +218,51 @@ blockquote {
 }
 
 @-webkit-keyframes slider {
-  0%  { transform: translateX(0%); }
-  25% { transform: translateX(0%); }
-  33% { transform: translateX(-25%); }
-  58% { transform: translateX(-25%); }
-  66% { transform: translateX(-50%); }
-  91% { transform: translateX(-50%); }
-  100%{ transform: translateX(-75%); }
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-25%);
+  }
+  58% {
+    transform: translateX(-25%);
+  }
+  66% {
+    transform: translateX(-50%);
+  }
+  91% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
 }
 
 @keyframes slider {
-   0%  { transform: translateX(0%); }
-  25% { transform: translateX(0%); }
-  33% { transform: translateX(-25%); }  
-  58% { transform: translateX(-25%); }
-  66% { transform: translateX(-50%); }
-  91% { transform: translateX(-50%); }
-  100%{ transform: translateX(-75%); }
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-25%);
+  }
+  58% {
+    transform: translateX(-25%);
+  }
+  66% {
+    transform: translateX(-50%);
+  }
+  91% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
 }
 
 footer {
@@ -277,176 +271,155 @@ footer {
   margin-right: 2em;
 }
 
-@media(min-width:750px) {
-  #testimonials: height: 150px;
+@media (min-width: 750px) {
+  #testimonials {
+    height: 150px;
+  }
 }
-#testimonials
-{
-	
-	text-align: center;
-	background-color:#002c42;
-	color: #fff;
-}
-
-h2
-{
-	font-family: 'Montserrat-Bold', sans-serif; 
-	font-size: 2rem;
-	line-height: 1.5;
+#testimonials {
+  text-align: center;
+  background-color: #002c42;
+  color: #fff;
 }
 
-.testimonial-image
-{
-	width:10%;
-	border-radius: 100%;
-	margin: 20px;
+h2 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
-#press
-{
- background-color: #fff;
- text-align: center;
- padding-bottom: 3%
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
 }
 
-.press-logo
-{
-	width: 15%;
-	margin: 20px 20px 20px 50px;
+#press {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 3%;
 }
 
-.carousel-item
-{
-	padding: 7% 15%;
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 20px 50px;
 }
 
-
-
-
-
+.carousel-item {
+  padding: 7% 15%;
+}
 
 #membership {
-    background-color: #002c42;
+  background-color: #002c42;
 }
 
-.O-I-button
-{
-	margin: 5% 3% 5% 0;
+.O-I-button {
+  margin: 5% 3% 5% 0;
 }
-
 
 #membership #header-1 {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
-    padding: 30px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
 }
 
 #membership #header-2 {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
-    padding: 10px 50px 0px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 50px 0px;
 }
 
 #membership #header-2 img {
-    padding: 20px;
+  padding: 20px;
 }
 
-#membership #iaeste-india {   
-    height: 60px;
+#membership #iaeste-india {
+  height: 60px;
 }
 
 #membership #line {
-    background-color: #ffffff;
-    margin: auto 50px;
-    height: 60px;
-    width: 3px;
+  background-color: #ffffff;
+  margin: auto 50px;
+  height: 60px;
+  width: 3px;
 }
 
 #membership #exchange-year {
-    margin: 20px;
-    height: 30px;
+  margin: 20px;
+  height: 30px;
 }
 
 #membership #body {
-    background-color: #0d4663;
-    padding: 30px auto;
-    z-index: 0;
+  background-color: #0d4663;
+  padding: 30px auto;
+  z-index: 0;
 }
 
 #membership #body #back {
-    position: absolute;
-    width: 40%;
-    left: 30%;
-    margin: 20px;
-    z-index: 1;
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  margin: 20px;
+  z-index: 1;
 }
 
-#membership  {
-    z-index: 1;
-    padding: 25px;
-    font-size: 50px;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Avenir';
+#membership {
+  z-index: 1;
+  padding: 25px;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Avenir";
 }
 
 #membership #stats {
-    z-index: 1;
-    display: grid;
-    color: #ffffff;
-    font-family: 'Avenir';
-    text-align: center;
-    grid-template-columns: auto auto auto auto;
-    padding-bottom: 10px;
+  z-index: 1;
+  display: grid;
+  color: #ffffff;
+  font-family: "Avenir";
+  text-align: center;
+  grid-template-columns: auto auto auto auto;
+  padding-bottom: 10px;
 }
 #membership #stats div {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 #membership #stats h3 {
-    padding: 0;
-    margin: 0;
-    font-size: 50px;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
 }
 
-#membership #stats p{
-    padding: 0;
-    margin: 0;
-    font-size: 30px;
+#membership #stats p {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
 }
-.abc
-{
-	position: relative;
-	left:40px;
-}
-
-
-#footer
-{
- padding: 7% 15%;
- text-align: center;
-
+.abc {
+  position: relative;
+  left: 40px;
 }
 
-.social-icon
-{
-	margin: 20px 10px;
+#footer {
+  padding: 7% 15%;
+  text-align: center;
 }
 
-.footer_text
-{
-	font-size: 1rem;
+.social-icon {
+  margin: 20px 10px;
 }
 
-.figures
-{
-	font-size: 1.5rem;
+.footer_text {
+  font-size: 1rem;
 }
 
-
+.figures {
+  font-size: 1.5rem;
+}
 
 /* unvisited link */
 a:link {
@@ -458,25 +431,17 @@ a:visited {
   color: #fff;
 }
 
-
-.figures
-{
-	color: #fff;
-	font-size: 2rem;
-}
-
-.figuresText
-{
+.figures {
   color: #fff;
-	font-size: 2rem;	
+  font-size: 2rem;
 }
 
-.logo
-{
-	height: 50px;
-	width: 200px;
+.figuresText {
+  color: #fff;
+  font-size: 2rem;
 }
 
-
-
-
+.logo {
+  height: 50px;
+  width: 200px;
+}
