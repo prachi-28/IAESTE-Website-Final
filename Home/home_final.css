@@ -21,48 +21,68 @@ body {
   font-family: "Montserrat-Black", sans-serif;
 }
 
-.navnav {
-  padding-right: 0;
-  padding-left: 0;
-  padding: 3% 18% 3%;
-}
+/*Navbar style*/
 
-.navbar-brand {
-  font-family: "ubuntu";
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: bold;
-  position: relative;
-  right: 100px;
+
+
+#header1
+{
+  position: absolute;
+  z-index: 1  ;
+  width: 100%;
+
+
 }
 
 .navbar {
-  padding: 0px 0 1.5rem;
+  padding: 50px 0;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-brand {
+  color: #dcdde1;
 }
 
 .nav-item {
-  padding: 0 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 10px;
+
 }
 
-.nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat-Light", sans-serif;
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  /*background: #dcdde1;*/
+  /*color: #262626;*/
 }
-.logo {
-  height: 06px;
-  width: 200px;
+
+/*responsive navbar*/
+
+
+
+.main
+{
   position: relative;
-  left: 100px;
+  background-image: url("assets/images/landing-back.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 220px 0 200px;
 }
+
 
 #landing {
-  background-image: url("assets/images/landing-back.jpg");
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100vw 100vh;
   width: 100%;
   height: 100%;
 }
+
 
 #landing-front {
   display: block;
@@ -82,6 +102,38 @@ body {
   position: relative;
   bottom: 100px;
 }
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 851px) {
+
+#landing-front {
+  display: block;
+  height: 40vh;
+  width: 95vw;
+ } 
+
+ #landing-subtitle {
+  display: block;
+  height: 40vh;
+  width: 80vw;
+ }
+
+ /*last section responsive*/
+#membership {
+  display: none;
+}
+
+
+
+
+}
+
+
+
+
 
 #features {
   padding: 7% 15%;
@@ -148,8 +200,9 @@ p {
   About Us Section with Stats
 */
 #about-us {
-  background-image: url("assets/images/about.jpg");
+ /* background-image: url("assets/images/about.jpg");*/
   background-size: cover;
+  background-color: #002c42;
   background-repeat: no-repeat;
   padding: 5vh 6vw;
 
@@ -354,7 +407,7 @@ h2 {
 }
 
 #membership #body {
-  background-color: #0d4663;
+  background-color: x;
   padding: 30px auto;
   z-index: 0;
 }
@@ -403,6 +456,31 @@ h2 {
   position: relative;
   left: 40px;
 }
+
+/* Responsive */
+
+.MobileMembership {
+  padding: 7% 15%;
+  background-color: #002c42;
+  position: relative;
+  z-index: 1;
+}
+
+.box {
+  text-align: center;
+  padding: 5%;
+}
+
+@media screen and (min-width: 851px) and (max-width: 3000px) {
+  .box {
+    display: none;
+
+  }
+
+  .MobileMembership {
+    display: none;
+  }
+  }
 
 #footer {
   padding: 7% 15%;
