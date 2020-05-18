@@ -163,15 +163,6 @@ p {
   flex-wrap: wrap;
 }
 
-#testimonials {
-  position: relative;
-  justify-content: center;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 1000px;
-  height: 450px;
-}
-
 /* 
   About Us Section with Stats
 */
