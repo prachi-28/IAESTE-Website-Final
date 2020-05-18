@@ -23,15 +23,10 @@ body {
 
 /*Navbar style*/
 
-
-
-#header1
-{
+#header1 {
   position: absolute;
-  z-index: 1  ;
+  z-index: 1;
   width: 100%;
-
-
 }
 
 .navbar {
@@ -51,7 +46,6 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   padding-left: 10px;
-
 }
 
 .navbar-dark .navbar-nav .nav-item .nav-link:hover {
@@ -61,10 +55,7 @@ body {
 
 /*responsive navbar*/
 
-
-
-.main
-{
+.main {
   position: relative;
   background-image: url("assets/images/landing-back.jpg");
   min-height: 100vh;
@@ -73,16 +64,13 @@ body {
   padding: 220px 0 200px;
 }
 
-
 #landing {
-  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100vw 100vh;
   width: 100%;
   height: 100%;
 }
-
 
 #landing-front {
   display: block;
@@ -103,37 +91,24 @@ body {
   bottom: 100px;
 }
 
-
-
-
-
 @media screen and (min-width: 0px) and (max-width: 851px) {
+  #landing-front {
+    display: block;
+    height: 40vh;
+    width: 95vw;
+  }
 
-#landing-front {
-  display: block;
-  height: 40vh;
-  width: 95vw;
- } 
+  #landing-subtitle {
+    display: block;
+    height: 40vh;
+    width: 80vw;
+  }
 
- #landing-subtitle {
-  display: block;
-  height: 40vh;
-  width: 80vw;
- }
-
- /*last section responsive*/
-#membership {
-  display: none;
+  /*last section responsive*/
+  #membership {
+    display: none;
+  }
 }
-
-
-
-
-}
-
-
-
-
 
 #features {
   padding: 7% 15%;
@@ -200,22 +175,21 @@ p {
   About Us Section with Stats
 */
 #about-us {
- /* background-image: url("assets/images/about.jpg");*/
   background-size: cover;
   background-color: #002c42;
   background-repeat: no-repeat;
   padding: 5vh 6vw;
+  color: white;
 
   display: grid;
   grid-template-columns: 40% 60%;
 }
 #about-us-header {
-  /* font-weight: 500; */
   grid-column: 1/2;
 }
 #about-us-text {
   padding: 0;
-  margin: 0;
+  margin: 2vh 0 0 0;
   grid-column: 1/2;
 }
 #stat-wrapper {
@@ -225,6 +199,8 @@ p {
 .stat {
   text-align: left;
   padding: 0 5vw;
+
+  grid-column: 2/2;
 }
 .stat > h5 {
   margin: 0;
@@ -250,6 +226,22 @@ p {
 }
 #LC-stat {
   width: 75%;
+}
+
+/* 
+    About Us Mobile View 
+*/
+@media only screen and (max-width: 768px) {
+  #about-us {
+    display: block;
+    text-align: center;
+  }
+  #about-us-text {
+    margin: 4vh 0 0 0;
+  }
+  #stat-wrapper {
+    margin-top: 3vh;
+  }
 }
 
 figure {
@@ -474,13 +466,12 @@ h2 {
 @media screen and (min-width: 851px) and (max-width: 3000px) {
   .box {
     display: none;
-
   }
 
   .MobileMembership {
     display: none;
   }
-  }
+}
 
 #footer {
   padding: 7% 15%;
