@@ -288,7 +288,7 @@ figure {
   position: absolute;
   left: 0;
   top: 100%;
-  width: 100%;
+  width: 212%;
   display: none;
 
   padding: 1vh 0 1vh 0;
@@ -304,12 +304,19 @@ figure {
   border-bottom: 1px solid lightgrey;
 }
 
+.LC-list > a {
+  text-decoration: none;
+}
+
 .country:hover {
   border-radius: 4px 4px 0 0;
   z-index: 15;
 }
 .country:hover .LC-list {
   display: inline;
+}
+.country:hover #map-container {
+  overflow: scroll;
 }
 
 /* 
