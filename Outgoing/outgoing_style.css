@@ -211,6 +211,8 @@ figure {
   padding: 3vh 0 4vh 0;
   margin: 0;
   display: grid;
+  overflow: visible;
+
   grid-template-columns: 40% 60%;
 }
 
@@ -237,7 +239,6 @@ figure {
   min-height: 100%;
   box-sizing: border-box;
   z-index: 200;
-  overflow: visible;
 }
 
 .continent-card {
@@ -249,7 +250,8 @@ figure {
   display: none;
 
   /* Grid rows shared between .continent-name and .country-list  */
-  grid-template-rows: auto auto;
+  grid-template-rows: 10% 90%;
+
   grid-gap: 1vh 0;
 }
 
@@ -273,7 +275,7 @@ figure {
   grid-auto-columns: 1fr;
 
   grid-auto-flow: column;
-  overflow: scroll hidden;
+  overflow: scroll visible;
   padding-left: 1vw;
 }
 
@@ -316,6 +318,7 @@ figure {
   #map-section {
     display: block;
   }
+
   #world-map {
     width: 80%;
     margin: auto;
@@ -327,6 +330,7 @@ figure {
   }
 
   #continent-card {
+    grid-template-rows: 15% 85%;
     overflow-y: visible;
     min-height: 50vh;
   }
