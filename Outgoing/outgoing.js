@@ -1,5 +1,5 @@
-let slideIndex = 1;
 let selectedContinent = "asia";
+let showRules = false;
 
 let showCountry = false;
 let list = [];
@@ -8,6 +8,31 @@ window.onload = function () {
   const continents = document.getElementsByClassName("land");
   const countries = document.getElementsByClassName("country");
 
+  const rulesSection = document.getElementById("rules-regulations");
+  const rulesHeader = document.getElementById("rules-header");
+
+  //Event Listener to collapse rules section on click
+
+  rulesHeader.addEventListener("click", function () {
+    rulesSection.classList.toggle("rules-active");
+    showRules = !showRules;
+
+    if (showRules) {
+      rulesHeader.classList.add("minus");
+      rulesHeader.classList.remove("plus");
+      document.getElementById("rules-content").style.display = "block";
+    } else {
+      rulesHeader.classList.add("plus");
+      rulesHeader.classList.remove("minus");
+      document.getElementById("rules-content").style.display = "none";
+    }
+  });
+
+  /*
+  *
+  Event listeners for map section components
+  *
+  */
   list = document.getElementsByClassName("LC-list");
 
   for (continent of continents) {
@@ -35,14 +60,15 @@ window.onload = function () {
         changeCountry(event.target.children[1]);
     });
   }
+
   changeContinent(selectedContinent);
 };
 
 window.onresize = () => {
+  // for (l of list) {
+  //   l.style.display = "none";
+  // }
   showCountry = false;
-  for (l of list) {
-    l.style.display = "none";
-  }
 };
 
 changeContinent = (newContinent) => {
@@ -52,7 +78,7 @@ changeContinent = (newContinent) => {
 
   selectedContinent = newContinent;
   document.getElementById(selectedContinent).style.fill = "white";
-  document.getElementById(`${selectedContinent}-card`).style.display = "grid";
+  document.getElementById(`${selectedContinent}-card`).style.display = "flex";
 };
 
 changeCountry = (newCountry) => {

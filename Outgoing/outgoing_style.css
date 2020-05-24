@@ -81,11 +81,12 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  user-select: none;
 
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 4vh 5vw;
-  margin: 3vh 0;
+  margin: 3vh 0 0 0;
 }
 
 #overview-content {
@@ -202,6 +203,42 @@ figure {
 }
 
 /* 
+  Rules and Regulations 
+*/
+#rules-regulations {
+  user-select: none;
+}
+
+#rules-header {
+  font-size: 1.4em;
+  margin: 0;
+}
+#rules-content {
+  margin-top: 7vh;
+}
+
+.plus:after {
+  content: "\f067";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  float: right;
+  text-decoration: none;
+}
+.minus:after {
+  content: "\f068";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  float: right;
+  text-decoration: none;
+}
+
+#rules-content {
+  display: none;
+}
+
+/* 
   Map Section 
 */
 #map-section {
@@ -237,7 +274,7 @@ figure {
   color: black;
   position: relative;
   min-height: 100%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   z-index: 200;
 }
 
@@ -246,26 +283,25 @@ figure {
   height: 100%;
   text-align: center;
 
-  /* Initialised to none, toggles to display:grid once the appropriate continent is selected in outgoing.js */
+  /* Initialised to none, toggles to display:flex once the appropriate continent is selected in outgoing.js */
   display: none;
-
-  /* Grid rows shared between .continent-name and .country-list  */
-  grid-template-rows: 10% 90%;
-
-  grid-gap: 1vh 0;
+  flex-direction: column;
 }
 
 .continent-name {
   color: white;
-  margin: auto;
+  /* margin: 2vh auto; */
+  display: block;
+  margin: 0;
   font-weight: 600;
   font-size: 1.5em;
   grid-row: 1;
 }
 
 .country-list {
-  grid-row: 2;
-  height: 100%;
+  grid-row: 1;
+  min-height: 100%;
+  /* height: 100%; */
   color: black;
 
   /* Columns are added to the 4 row structure as number of countries increase, scrolls horizontally */
@@ -275,7 +311,8 @@ figure {
   grid-auto-columns: 1fr;
 
   grid-auto-flow: column;
-  overflow: scroll visible;
+  overflow-x: scroll;
+  z-index: 600;
   padding-left: 1vw;
 }
 
@@ -341,6 +378,7 @@ figure {
     font-size: 0.9em;
   }
 }
+
 .LC-list {
   position: absolute;
   left: 0;
@@ -352,7 +390,7 @@ figure {
   border-radius: 0 0 4px 4px;
   border-top: 1px solid darkgray;
   background-color: white;
-  z-index: 10;
+  z-index: 300;
   color: black;
 
   /* Toggles to display:flex on hover or select */
