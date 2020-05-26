@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="outgoing_style.css">
+    <script src="https://kit.fontawesome.com/9683219706.js" crossorigin="anonymous"></script>
+
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -149,13 +151,14 @@
                     formalities before you leave for your internship.</p>
             </li>
         </ul>
-    </section>
+    </section>-->
 
-    <section id="slider-container">
+    <section id="testimonial-section">
         <h3>Testimonials</h3>
+
         <div id="testimonials">
-            <figure class="single-testimonial">
-                <blockquote>
+            <div class="map-container">
+                <div class="testimonial-wrapper ">
                     <p class="quote">I had been selected for an internship at Karel Electronics in Ankara,
                         Turkey via
                         IAESTE.
@@ -179,8 +182,8 @@
                         opportunity.
                     </p>
                     <footer>- <cite>Arjun Chauhan</cite></footer>
-                </blockquote>
-                <blockquote>
+                </div>
+                <div class="testimonial-wrapper">
                     <p class="quote">I am a fourth year student of Computer Science and Engineering in Manipal
                         Institute
                         of
@@ -199,8 +202,8 @@
                         experience
                         even more memorable.</p>
                     <footer>- <cite>Viseshini Reddy</cite></footer>
-                </blockquote>
-                <blockquote>
+                </div>
+                <div class="testimonial-wrapper">
                     <p class="quote">I completed an internship at the Kasetsart University, Sakon Nakhon,
                         Thailand from
                         the
@@ -230,10 +233,19 @@
                         for giving
                         me this opportunity to gain an lifelong cherishable experience.</p>
                     <footer>- <cite>Koustav Pramanick</cite></footer>
-                </blockquote>
-            </figure>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div id="carousel-dot-container" style=" text-align:center">
+                <span class="carousel-dot" onclick="currentSlide(1)"></span>
+                <span class="carousel-dot" onclick="currentSlide(2)"></span>
+                <span class="carousel-dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
-    </section> -->
+    </section>
 
     <section id="rules-regulations">
         <h3 id="rules-header" class="plus"> Rules and Regulations</h3>

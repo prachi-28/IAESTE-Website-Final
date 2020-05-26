@@ -119,99 +119,86 @@ How to Apply
   margin-top: 3vh;
 }
 
-/* Testimonial Section -------------> */
-#slider-container {
-  display: flex;
-  flex-wrap: wrap;
+/* 
+  Testimonial Section -------------> 
+*/
+
+#testimonial-section {
+  padding: 4vh 1vw;
+  text-align: center;
+}
+#testimonial-section > h3 {
+  padding: 0 4vw;
 }
 
 #testimonials {
-  position: relative;
-  justify-content: center;
-  margin: 0 auto;
+  min-height: 30vh;
+  padding: 1vh 0;
   overflow: hidden;
-  width: 1000px;
-  /* height: 450px; */
+  position: relative;
+  width: 100%;
 }
 
+.testimonial-wrapper {
+  width: 90%;
+  margin: auto;
+  display: none;
+}
 .quote {
   color: #8f8f8f;
 }
-blockquote {
-  width: 25%;
-  margin: 0;
-  float: left;
-  padding-bottom: 1em;
-}
-figure {
+
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  width: 400%;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
   left: 0;
-  animation: 20s slider infinite;
-  -webkit-animation: 20s slider infinite;
-  border-top: 1px solid #c2c1c2;
-  border-bottom: 1px solid #c2c1c2;
-  margin: 0;
+}
+.next {
+  right: 0;
+}
+#carousel-dot-container {
+  margin-top: 30px;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-@-webkit-keyframes slider {
-  0% {
-    transform: translateX(0%);
-  }
-  25% {
-    transform: translateX(0%);
-  }
-  33% {
-    transform: translateX(-25%);
-  }
-  58% {
-    transform: translateX(-25%);
-  }
-  66% {
-    transform: translateX(-50%);
-  }
-  91% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(-75%);
-  }
+.active,
+.carousel-dot:hover {
+  background-color: #717171;
 }
-
-@keyframes slider {
-  0% {
-    transform: translateX(0%);
-  }
-  25% {
-    transform: translateX(0%);
-  }
-  33% {
-    transform: translateX(-25%);
-  }
-  58% {
-    transform: translateX(-25%);
-  }
-  66% {
-    transform: translateX(-50%);
-  }
-  91% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(-75%);
-  }
-}
-
 /* 
   Rules and Regulations 
 */
 #rules-regulations {
   user-select: none;
+  background-color: white;
+  color: var(--main-blue);
 }
 
 #rules-header {
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
   margin: 0;
+  text-align: center;
 }
 #rules-content {
   margin-top: 7vh;
