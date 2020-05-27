@@ -109,8 +109,15 @@ h3 {
 /*
 How to Apply
 */
+#how-to-apply {
+  background-image: url("./SecondSection.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: cover;
+}
 #how-to-apply-header {
-  margin-bottom: 20px;
+  margin-bottom: 4vh;
+  text-align: center;
 }
 #step-wise-guide {
   margin: 10px 0;
@@ -225,9 +232,20 @@ How to Apply
   display: none;
 }
 
+#general-rules-header {
+  margin-top: 4vh;
+}
+#general-rules-list {
+  display: none;
+}
 /* 
   Map Section 
 */
+
+#map-header {
+  text-align: center;
+  padding: 4vh 4vw;
+}
 #map-section {
   text-align: center;
   background-color: var(--main-blue);
@@ -294,7 +312,7 @@ How to Apply
   /* Columns are added to the 4 row structure as number of countries increase, scrolls horizontally */
   display: grid;
   grid-template-rows: repeat(4, auto);
-  grid-gap: 0 1vw;
+  grid-gap: 0vh 1vw;
   grid-auto-columns: 1fr;
 
   grid-auto-flow: column;
@@ -303,14 +321,30 @@ How to Apply
   padding-left: 1vw;
 }
 
+.LC-Card {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 98%;
+
+  border-radius: 4px;
+  margin-left: 1vw;
+  background-color: white;
+  box-sizing: border-box;
+  z-index: 900;
+
+  padding: 3vh 3vw;
+  color: black;
+}
+
 .country {
   position: relative;
 
   width: 19vw;
   height: 60%;
   margin: auto;
-
-  /* padding: 8px 12px; */
 
   border-radius: 4px;
   background-color: white;
@@ -359,6 +393,10 @@ How to Apply
     min-height: 50vh;
   }
 
+  .country-list {
+    grid-gap: 2vh 1vw;
+  }
+
   .country {
     width: 49vw;
     min-height: 5vh;
@@ -367,19 +405,6 @@ How to Apply
 }
 
 .LC-list {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  min-height: 170%;
-
-  padding: 1vh 0;
-  border-radius: 0 0 4px 4px;
-  border-top: 1px solid darkgray;
-  background-color: white;
-  z-index: 300;
-  color: black;
-
   /* Toggles to display:flex on hover or select */
   display: none;
   flex-direction: column;
@@ -391,6 +416,13 @@ How to Apply
 }
 .LC-list > a {
   text-decoration: none;
+}
+
+.card-close-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border-radius: 5%;
 }
 
 /* 

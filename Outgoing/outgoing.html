@@ -79,8 +79,6 @@
             </div>
         </section>
     </section>
-    <!-- 
-
 
     <section id="how-to-apply">
         <h3 id="how-to-apply-header">How to apply for internships</h3>
@@ -151,7 +149,7 @@
                     formalities before you leave for your internship.</p>
             </li>
         </ul>
-    </section>-->
+    </section>
 
     <section id="testimonial-section">
         <h3>Testimonials</h3>
@@ -290,8 +288,8 @@
                 any clarifications, please contact application@iaeste.in
             </p>
 
-            <h3>General Rules</h3>
-            <ol>
+            <h3 id="general-rules-header" class="plus">General Rules</h3>
+            <ol id="general-rules-list">
                 <li> IAESTE India LC Manipal will release offers intermittently on the official website
                     manipal.iaeste.in
                     for
@@ -383,7 +381,7 @@
 
     </section>
 
-
+    <h3 id="map-header">Our Presence</h3>
     <section id="map-section">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap"
             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
@@ -429,61 +427,59 @@
         <div id="info">
             <div class="continent-card" id="asia-card">
                 <span class="continent-name">Asia</span>
+                <div class="LC-Card" id="IN-card">
+                    <h3><a href="#">India</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <a href="#">
+                            <div>LC Manipal</div>
+                        </a>
+                        <a href="#">
+                            <div>LC Manipal University</div>
+                        </a>
+                        <a href="#">
+                            <div>LC Karunya</div>
+                        </a>
+                        <a href="#">
+                            <div>LC JECRC</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="LC-Card" id="IL-card">
+                    <h3><a href="#">Israel</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <a href="#">
+                            <div>LC Manipal</div>
+                        </a>
+                        <a href="#">
+                            <div>LC Manipal University</div>
+                        </a>
+                        <a href="#">
+                            <div>LC Karunya</div>
+                        </a>
+                        <a href="#">
+                            <div>LC JECRC</div>
+                        </a>
+                    </div>
+                </div>
                 <div class="country-list">
                     <div class="country" id="IN">
-                        <div class="country-name"><a href="#">India</a></div>
-                        <div class="LC-list" id="IN-list">
-                            <a href="#">
-                                <div>LC Manipal</div>
-                            </a>
-                            <a href="#">
-                                <div>LC Manipal University</div>
-                            </a>
-                            <a href="#">
-                                <div>LC Karunya</div>
-                            </a>
-                            <a href="#">
-                                <div>LC JECRC</div>
-                            </a>
-                        </div>
+                        <div class="country-name">India</div>
                     </div>
 
                     <div class="country" id="PH">
                         <div class="country-name"><a href="#">Phillippines</a></div>
-                        <div class="LC-list" id="PH-list">
-                            <a href="#">
-                                <div>Phillippines 1</div>
-                            </a>
-
-
-                        </div>
                     </div>
 
 
                     <div class="country" id="QA">
                         <div class="country-name"><a href="#">Qatar</a></div>
-
-                        <div class="LC-list" id="QA-list">
-                            <a href="#">
-                                <div>Qatar 1</div>
-                            </a>
-                            <a href="#">
-                                <div>Qatar 2</div>
-                            </a>
-                        </div>
                     </div>
 
 
                     <div class="country" id="JP">
                         <div class="country-name"><a href="#">Japan</a></div>
-
-                        <div class="LC-list" id="JP-list">
-                            <a href="#">
-                                <div>Japan 1</div>
-                            </a>
-
-
-                        </div>
                     </div>
 
                     <div class="country" id="KR"><a href="#">South Korea</a> </div>
@@ -508,20 +504,6 @@
 
                     <div class="country" id="IL">
                         <div class="country-name"><a href="#">Israel</a></div>
-                        <div class="LC-list" id="IL-list">
-                            <a href="#">
-                                <div>Israel 1</div>
-                            </a>
-                            <a href="#">
-                                <div>Tel Aviv University</div>
-                            </a>
-                            <a href="#">
-                                <div>Israel 2</div>
-                            </a>
-                            <a href="#">
-                                <div>LC JECRC</div>
-                            </a>
-                        </div>
                     </div>
                     <div class="country" id="CN"><a href="#">China</a></div>
                 </div>
@@ -559,7 +541,7 @@
 
     </section>
 
-    <!-- <section id="once-you-return">
+    <section id="once-you-return">
         <h3>Once You Return</h3>
         <p>
             Get in touch with us, we would love to hear all about your experience working abroad!
@@ -574,7 +556,7 @@
         <p> An internship through IAESTE is an enriching and an unforgettable experience. We wish you all the
             best for
             taking a step towards fulfilling your dreams.</p>
-    </section> -->
+    </section>
 
     <footer id="footer">
         <i class="social-icon fab fa-facebook" style="font-size:20px"></i>

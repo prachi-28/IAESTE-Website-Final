@@ -1,6 +1,6 @@
 let selectedContinent = "asia";
 let showRules = false;
-
+let showGeneral = false;
 let showCountry = false;
 let list = [];
 
@@ -8,23 +8,38 @@ window.onload = function () {
   const continents = document.getElementsByClassName("land");
   const countries = document.getElementsByClassName("country");
 
-  const rulesSection = document.getElementById("rules-regulations");
   const rulesHeader = document.getElementById("rules-header");
+  const rulesContent = document.getElementById("rules-content");
+
+  const generalRulesHeader = document.getElementById("general-rules-header");
+  const generalRulesList = document.getElementById("general-rules-list");
 
   //Event Listener to collapse rules section on click
-
   rulesHeader.addEventListener("click", function () {
-    rulesSection.classList.toggle("rules-active");
     showRules = !showRules;
 
     if (showRules) {
       rulesHeader.classList.add("minus");
       rulesHeader.classList.remove("plus");
-      document.getElementById("rules-content").style.display = "block";
+      rulesContent.style.display = "block";
     } else {
       rulesHeader.classList.add("plus");
       rulesHeader.classList.remove("minus");
-      document.getElementById("rules-content").style.display = "none";
+      rulesContent.style.display = "none";
+    }
+  });
+
+  generalRulesHeader.addEventListener("click", () => {
+    showGeneral = !showGeneral;
+
+    if (showGeneral) {
+      generalRulesHeader.classList.add("minus");
+      generalRulesHeader.classList.remove("plus");
+      generalRulesList.style.display = "block";
+    } else {
+      generalRulesHeader.classList.add("plus");
+      generalRulesHeader.classList.remove("minus");
+      generalRulesList.style.display = "none";
     }
   });
 
@@ -58,6 +73,10 @@ window.onload = function () {
     country.addEventListener("touchstart", (event) => {
       if (event.target.children[1].className == "LC-list")
         changeCountry(event.target.children[1]);
+    });
+
+    country.addEventListener("click", (event) => {
+      toggleCard(event.target, true);
     });
   }
 
@@ -109,8 +128,23 @@ window.onresize = () => {
 //   showSlides(slideIndex);
 // };
 
-// Carousel --------------->
+/*
+  elem --> triggering HTML element, the id of which decides which LC-Card to display/hide   
+  showCard --> boolean that indicates whether to display/hide the respective LC-Card
+*/
+toggleCard = (elem, showCard) => {
+  if (showCard) {
+    // console.log(elem.id);
+    document.getElementById(`${elem.id}-card`).style.display = "block";
+    document.getElementsByClassName("country-list")[0].style.display = "none";
+  } else {
+    // console.log(elem.parentNode.id);
+    document.getElementById(elem.parentNode.id).style.display = "none";
+    document.getElementsByClassName("country-list")[0].style.display = "grid";
+  }
+};
 
+// Carousel --------------->
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
