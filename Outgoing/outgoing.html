@@ -80,8 +80,8 @@
         </section>
     </section>
 
-    <section id="how-to-apply">
-        <h3 id="how-to-apply-header">How to apply for internships</h3>
+    <!-- <section id="how-to-apply">
+        <h3 id="how-to-apply-header">How to Apply for Internships</h3>
         <p>The prospect of going on an international internship may seem daunting, but life begins at the end of
             our
             comfort zone. Read on to find out how you can go on an internship through IAESTE.</p>
@@ -149,9 +149,9 @@
                     formalities before you leave for your internship.</p>
             </li>
         </ul>
-    </section>
+    </section> -->
 
-    <section id="testimonial-section">
+    <!-- <section id="testimonial-section">
         <h3>Testimonials</h3>
 
         <div id="testimonials">
@@ -238,12 +238,12 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <div id="carousel-dot-container" style=" text-align:center">
-                <span class="carousel-dot" onclick="currentSlide(1)"></span>
-                <span class="carousel-dot" onclick="currentSlide(2)"></span>
-                <span class="carousel-dot" onclick="currentSlide(3)"></span>
+                <span class="carousel-dot" onclick="showSlides(1)"></span>
+                <span class="carousel-dot" onclick="showSlides(2)"></span>
+                <span class="carousel-dot" onclick="showSlides(3)"></span>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="rules-regulations">
         <h3 id="rules-header" class="plus"> Rules and Regulations</h3>
@@ -427,25 +427,58 @@
         <div id="info">
             <div class="continent-card" id="asia-card">
                 <span class="continent-name">Asia</span>
-                <div class="LC-Card" id="IN-card">
-                    <h3><a href="#">India</a></h3>
+
+                <div class="LC-card" id="IN-card">
+                    <h3><a href="https://www.iaeste.in/live/">India</a></h3>
                     <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
                     <div>
-                        <a href="#">
+                        <a href="http://iaeste.in/manipalmu/index.html">
                             <div>LC Manipal</div>
                         </a>
-                        <a href="#">
+                        <a href="https://www.iaestemuj.in/ ">
                             <div>LC Manipal University</div>
                         </a>
-                        <a href="#">
-                            <div>LC Karunya</div>
-                        </a>
-                        <a href="#">
-                            <div>LC JECRC</div>
-                        </a>
+                        <div>LC Karunya</div>
+                        <div>LC JECRC</div>
                     </div>
                 </div>
-                <div class="LC-Card" id="IL-card">
+                <div class="LC-card" id="PH-card">
+                    <h3><a href="http://iaesteph.com">Phillipines</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="QA-card">
+                    <h3><a
+                            href="https://www.qu.edu.qa/students/activities/student-exchange-programs/iaste-program">Qatar</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>Qatar University</div>
+                </div>
+                <div class="LC-card" id="KP-card">
+                    <h3>DPR Korea</h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>Pyongyang University of Science and Technology(CI)</div>
+                </div>
+                <div class="LC-card" id="JO-card">
+                    <h3><a href="https://m.facebook.com/IAESTEJo/">Jordan</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>The University of Jordan</div>
+                </div>
+                <div class="LC-card" id="LB-card">
+                    <h3><a href="https://m.facebook.com/IAESTEatAUB/">Lebanon</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>AUB</div>
+                </div>
+                <div class="LC-card" id="IR-card">
+                    <h3><a href="http://iaeste.ir">Iran</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="IQ-card">
+                    <h3><a href="http://iaeste.ir">Iraq</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>University of Anbar (CI)[uoanbar.edu.iq]</div>
+                </div>
+
+                <div class=" LC-card" id="IL-card">
                     <h3><a href="#">Israel</a></h3>
                     <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
                     <div>
@@ -463,86 +496,597 @@
                         </a>
                     </div>
                 </div>
+                <div class="LC-card" id="KW-card">
+                    <h3><a href="">Kuwait</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>ACK(CI)</div>
+                </div>
+                <div class="LC-card" id="VN-card">
+                    <h3><a href="http://iaestevietnam.org/">Vietnam</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="TH-card">
+                    <h3><a href="http://www.iaeste.kmutnb.ac.th/">Thailand</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>King Mongkut's University of Technology</div>
+                </div>
+                <div class="LC-card" id="TR-card">
+                    <h3><a href="http://iaeste.org.tr/en">Turkey</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <a href="bahcesehir.iaeste@gmail.com">
+                            <div>LC Bahçeşehir University</div>
+                        </a>
+                        <a href="iaeste.bilgi@gmail.com">
+                            <div>LC Bilgi University</div>
+                        </a>
+                        <a href="iaeste.itu@gmail.com">
+                            <div>LC Istanbul Technical University</div>
+                        </a>
+                        <a href="iu.iaeste@gmail.com">
+                            <div>LC Istanbul University</div>
+                        </a>
+                        <a href="iaeste.iuorman@gmail.com">
+                            <div>IU Faculty of Forestry</div>
+                        </a>
+                        <a href="iaeste@ku.edu.tr">
+                            <div>LC Koç University</div>
+                        </a>
+                        <a href="iaestemef@gmail.com">
+                            <div>LC MEF University</div>
+                        </a>
+                        <a href="iaeste.yildiztu@gmail.com">
+                            <div>LC Yıldız Technical University</div>
+                        </a>
+                        <a href="iaeste.gsu@gmail.com">
+                            <div>LC Galatasaray University</div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="LC-card" id="AE-card">
+                    <h3><a href="https://www.sharjah.ac.ae/en/Administration/CASTO/it/Pages/E.aspx">UAE</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>University of Sharjah</div>
+                </div>
+                <div class="LC-card" id="MN-card">
+                    <h3><a href="https://m.facebook.com/IAESTE.Mongolia/">Mongolia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="NP-card">
+                    <h3>Nepal</h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>Kantipur City College </div>
+                </div>
+                <div class="LC-card" id="AF-card">
+                    <h3>Afghanistan</h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Kabul university(CI)</div>
+                        <div>SESO (CI)</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="BD-card">
+                    <h3>Bangladesh</h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>College of Aviation & Technology(AM)</div>
+                </div>
+                <div class="LC-card" id="CH-card">
+                    <h3><a href="http://www.iaeste-china.org">China</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>The Hong Kong Polytechnic University(AM)</div>
+                        <div>University of Macau(AM)</div>
+                        <div>CiTD, Shanghai(AM)</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="IL-card">
+                    <h3><a href="http://www.iaeste-china.org">Israel</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>Technion-Israel Institute of Technology</div>
+                </div>
+
                 <div class="country-list">
-                    <div class="country" id="IN">
-                        <div class="country-name">India</div>
-                    </div>
-
-                    <div class="country" id="PH">
-                        <div class="country-name"><a href="#">Phillippines</a></div>
-                    </div>
-
-
-                    <div class="country" id="QA">
-                        <div class="country-name"><a href="#">Qatar</a></div>
-                    </div>
-
-
-                    <div class="country" id="JP">
-                        <div class="country-name"><a href="#">Japan</a></div>
-                    </div>
-
-                    <div class="country" id="KR"><a href="#">South Korea</a> </div>
-                    <div class="country" id=""><a href="#"></a>DPR Korea</div>
-                    <div class="country" id=""><a href="#">Jordan</a> </div>
-                    <div class="country" id=""><a href="#">Kazakhstan</a></div>
-                    <div class="country" id=""><a href="#">Iran</a></div>
-                    <div class="country" id=""><a href="#">Iraq</a></div>
-                    <div class="country" id=""><a href="#">Uzbekistan</a></div>
-                    <div class="country" id=""><a href="#">Yemen</a></div>
-                    <div class="country" id=""><a href="#">Vietnam</a></div>
-                    <div class="country" id=""><a href="#">Tajikistan</a></div>
-                    <div class="country" id=""><a href="#">Syria</a></div>
-                    <div class="country" id=""><a href="#">Thailand</a></div>
-                    <div class="country" id=""><a href="#">Turkey</a></div>
-                    <div class="country" id=""><a href="#">UAE</a></div>
-                    <div class="country" id=""><a href="#">Mongolia</a></div>
-                    <div class="country" id="NP"><a href="#">Nepal</a></div>
-                    <div class="country" id="AF"><a href="#">Afghanistan</a></div>
-                    <div class="country" id="BD"><a href="#">Bangladesh</a></div>
-
-
-                    <div class="country" id="IL">
-                        <div class="country-name"><a href="#">Israel</a></div>
-                    </div>
-                    <div class="country" id="CN"><a href="#">China</a></div>
+                    <div class="country" id="IN">India</div>
+                    <div class="country" id="PH">Phillippines</div>
+                    <div class="country" id="QA"> Qatar </div>
+                    <div class="country" id="JP">Japan</div>
+                    <div class="country" id="KR">South Korea </div>
+                    <div class="country" id="KP">DPR Korea</div>
+                    <div class="country" id="JO">Jordan </div>
+                    <div class="country" id="KZ">Kazakhstan</div>
+                    <div class="country" id="KW">Kuwait</div>
+                    <div class="country" id="LB">Lebanon</div>
+                    <div class="country" id="IR">Iran</div>
+                    <div class="country" id="IQ">Iraq</div>
+                    <div class="country" id="UZ">Uzbekistan</div>
+                    <div class="country" id="YE">Yemen</div>
+                    <div class="country" id="VN">Vietnam</div>
+                    <div class="country" id="TJ">Tajikistan</div>
+                    <div class="country" id="SY">Syria</div>
+                    <div class="country" id="TH">Thailand</div>
+                    <div class="country" id="TR">Turkey</div>
+                    <div class="country" id="AE">UAE</div>
+                    <div class="country" id="MN">Mongolia</div>
+                    <div class="country" id="NP">Nepal</div>
+                    <div class="country" id="AF">Afghanistan</div>
+                    <div class="country" id="BD">Bangladesh</div>
+                    <div class="country" id="IL">Israel</div>
+                    <div class="country" id="CN">China</div>
+                    <div class="country" id="RU">Russia</div>
                 </div>
             </div>
 
             <div class="continent-card" id="north_america-card">
                 <span class="continent-name">North America</span>
-            </div>
-            <div class="continent-card" id="south_america-card">
-                <span class="continent-name">South America</span>
-            </div>
-            <div class="continent-card" id="europe-card">
-                <span class="continent-name">Europe</span>
+
+                <div class="LC-card" id="US-card">
+                    <h3>United States of America</h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="PA-card">
+                    <h3><a
+                            href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.utp.ac.pa%2Fintercambios-por-redes-internacionales&h=AT0gN7VN-8LESRz-1sCdxR0q45wTSMsp-6_Ww_2E5Ckelx7A6XT36ftOq7vmT05xnXXLE_WPiUJBMWcQ9hgrL3WB_e2q8i22kunplnEGqA5ONQg59JReQTOf8vpitaSp9kuzVrlla_N15xvYbedhXXbetIuZtA">Panama</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="NI-card">
+                    <h3>Nicaragua</h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>ULSA</div>
+                </div>
+                <div class="LC-card" id="CA-card">
+                    <h3>Canada</h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Carleton</div>
+                        <div>Queen's</div>
+                        <div>IAESTE at Western</div>
+                        <div>Alberta (IAESTE U of A)</div>
+                        <div>IAESTE at UBC</div>
+                    </div>
+                </div>
+
                 <div class="country-list">
-                    <div class="country" id=""><a href="#">Syria</a></div>
-                    <div class="country" id=""><a href="#">Thailand</a></div>
-                    <div class="country" id=""><a href="#">Turkey</a></div>
-                    <div class="country" id=""><a href="#">UAE</a></div>
-                    <div class="country" id=""><a href="#">Mongolia</a></div>
-                    <div class="country" id="NP"><a href="#">Nepal</a></div>
-                    <div class="country" id="AF"><a href="#">Afghanistan</a></div>
-                    <div class="country" id="BD"><a href="#">Bangladesh</a></div>
-                    <div class="country" id=""><a href="#">Mongolia</a></div>
-                    <div class="country" id="NP"><a href="#">Nepal</a></div>
-                    <div class="country" id="AF"><a href="#">Afghanistan</a></div>
+                    <div class="country" id="US">United States of America</div>
+                    <div class="country" id="PA">Panama</div>
+                    <div class="country" id="CA">Canada</div>
+                    <div class="country" id="NI">Nicaragua</div>
                 </div>
             </div>
+
+            <div class="continent-card" id="south_america-card">
+                <span class="continent-name">South America</span>
+
+                <div class="LC-card" id="PE-card">
+                    <h3><a href="http://udep.edu.pe/iaeste/iaeste/iaeste-peru/">Peru</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div><a href="http://udep.edu.pe/iaeste/iaeste/iaeste-lima/">LC Lima</a></div>
+                </div>
+                <div class="LC-card" id="BR-card">
+                    <h3><a href="https://www.abipe.org.br/">Brazil</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="CL-card">
+                    <h3><a href="https://www.facebook.com/IAESTEChile/">Chile</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div><a href="http://temucouniverciudad.cl/minisitio/iaeste/">Temuco univerciudad(CI)</a></div>
+                </div>
+                <div class="LC-card" id="AR-card">
+                    <h3><a href="https://www.argentina.gob.ar/ciencia/iaeste-argentina">Argentina</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="BO-card">
+                    <h3><a href="https://www.facebook.com/iaestebolivia/">Bolivia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>IB (CI)</div>
+                </div>
+                <div class="LC-card" id="EC-card">
+                    <h3><a
+                            href="http://www.usfq.edu.ec/estudiantes/contacto_empresarial/estudiantes/iaeste/Paginas/default.aspx">Ecuador</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>San Francisco de Quito University</div>
+                </div>
+                <div class="LC-card" id="CO-card">
+                    <h3><a
+                            href="http://www.iaeste.org.co/?fbclid=IwAR22DZ6_XCkAlCkUjP7HTcwr2pmOPLCyuEJkfL7wVoJ8Tf9_rUmwOXDtQ-Y">Colombia</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>Santa Marta</div>
+                </div>
+
+                <div class="country-list">
+                    <div class="country" id="PE">Peru</div>
+                    <div class="country" id="BR">Brazil</div>
+                    <div class="country" id="CL">Chile</div>
+                    <div class="country" id="AR">Argentina</div>
+                    <div class="country" id="BO">Bolivia</div>
+                    <div class="country" id="EC">Ecuador</div>
+                    <div class="country" id="CO">Colombia</div>
+                </div>
+            </div>
+
+            <div class="continent-card" id="europe-card">
+                <span class="continent-name">Europe</span>
+
+                <div class="LC-card" id="AT-card">
+                    <h3><a href="https://www.iaeste.at/en/">Austria</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Boku</div>
+                        <div>LC Graz</div>
+                        <div>LC Innsbruck</div>
+                        <div>LC Leoben</div>
+                        <div>LC Linz</div>
+                        <div>LC Salzburg</div>
+                        <div>LC Vienna</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="BA-card">
+                    <h3><a href="http://www.iaeste.ba/">Austria</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Mostar</div>
+                        <div>LC Sarajevo</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="HR-card">
+                    <h3><a href="http://www.iaeste.hr/">Croatia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Osijek</div>
+                        <div>LC Rijeka</div>
+                        <div>LC Split</div>
+                        <div>LC Zagreb</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="CZ-card">
+                    <h3><a href="https://www.iaeste.cz/">Czech Republic</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Brno</div>
+                        <div>LC Liberec</div>
+                        <div>VŠB-TU Ostrava</div>
+                        <div>LC Pardubice</div>
+                        <div>ZČU Plzeň</div>
+                        <div>ČVUT v Praze</div>
+                        <div>VŠCHT Praha</div>
+                        <div>UTB Zlín</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="HR-card">
+                    <h3><a href="http://www.iaeste.hr/">Croatia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Osijek</div>
+                        <div>LC Rijeka</div>
+                        <div>LC Split</div>
+                        <div>LC Zagreb</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="DE-card">
+                    <h3><a href="https://www.iaeste.de/en/">Germany</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="GR-card">
+                    <h3><a href="https://www.iaeste.de/en/">Greece</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Athens </div>
+                        <div>Thessaloniki</div>
+                        <div>Xanthi</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="PL-card">
+                    <h3><a href="https://www.iaeste.pl/">Poland</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Gdańsk</div>
+                        <div>LC Szczecin</div>
+                        <div>LC Pozan</div>
+                        <div>LC Wasaw</div>
+                        <div>LC Lodz PLO</div>
+                        <div>LC Lodz UMED</div>
+                        <div>LC Lodz UL</div>
+                        <div>LC Wroclaw</div>
+                        <div>LC Gliwice</div>
+                        <div>LC Cracow AGH</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="MK-card">
+                    <h3><a href="https://iaeste.org.mk/">Macedonia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Skopje</div>
+                        <div>LC Bitola</div>
+                        <div>LC Ohrid</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="HU-card">
+                    <h3><a href="https://www.facebook.com/iaeste.hungary/">Hungary</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="IS-card">
+                    <h3><a href="https://www.facebook.com/IAESTE.ICE/">Iceland</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="IE-card">
+                    <h3><a href="http://iaestelc.ie/">Ireland</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Trinity College Dublin</div>
+                        <div>SAP</div>
+                        <div>ARUP</div>
+                        <div>Ericsson</div>
+                    </div>
+                </div>
+
+                <div class="LC-card" id="PT-card">
+                    <h3><a href="https://iaeste.pt/en/">Portugal</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>FCTUC</div>
+                        <div>Faculty of Sciences of the University of Lisbon</div>
+                        <div>Instituto Superior Técnico</div>
+                        <div>ISCTE-IUL</div>
+                        <div>Universidade de Lisboa</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="RS-card">
+                    <h3><a href="http://www.iaeste.ac.rs/site/">Serbia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Belgrade</div>
+                        <div>LC Nis</div>
+                        <div>LC Novi Sad</div>
+                        <div>LC Podgorica</div>
+                    </div>
+                </div>
+
+                <div class="LC-card" id="SK-card">
+                    <h3><a href="https://iaeste.sk/">Slovakia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Bratislava</div>
+                        <div>Žilina</div>
+                        <div>Zvolen</div>
+                        <div>Košice</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="SI-card">
+                    <h3><a href="http://iaeste.si/">Slovenia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Maribor</div>
+                        <div>Ljubljana</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="ES-card">
+                    <h3><a href="http://iaeste.es">Spain</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="MT-card">
+                    <h3><a href="https://iaeste.org.mt">Malta</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="FR-card">
+                    <h3><a href="https://www.iaeste-france.fr/en/">France</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Grenoble Alpes University(CI)</div>
+                        <div> Polytech Grenoble(CI)</div>
+                        <div>Grenoble INP(CI)</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="NL-card">
+                    <h3><a href="https://www.iaeste.nl">Netherlands</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Delft</div>
+                        <div>LC Utrecht</div>
+                        <div>LC Twente</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="BY-card">
+                    <h3>Belarus<h3>
+                            <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                            <div>
+                                <div>LC BSUIR</div>
+                                <div>BrSTU (CI)</div>
+                            </div>
+                </div>
+                <div class="LC-card" id="SCOT-card">
+                    <h3><a href="https://iaestescotland.com">Scotland</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div><a href="https://iaestescotland.com/iaeste-edinburgh/">LC Edinburgh</a></div>
+                        <div><a href="https://iaestescotland.com/iaeste-glasgow/">LC Glasgow</a></div>
+                    </div>
+                </div>
+                <div class="LC-card" id="SE-card">
+                    <h3><a href="https://iaeste.se">Sweden</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Luleå</div>
+                        <div>Lund</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="CH-card">
+                    <h3>Switzerland</h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div><a href="https://www.iaeste.ch/local-committees/join-us/lc-basel/">LC Basel</a></div>
+                        <div><a href="https://www.iaeste.ch/local-committees/join-us/lc-bern/">LC Bern</a></div>
+                        <div><a href="https://www.iaeste.ch/local-committees/join-us/lc-lausanne/">LC Lausanne</a></div>
+                        <div><a href="https://www.iaeste.ch/local-committees/join-us/lc-zurich/">LC Zurich</a></div>
+                    </div>
+                </div>
+                <div class="LC-card" id="BE-card">
+                    <h3><a href="https://iaeste.be/">Belgium</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Ghent</div>
+                        <div>Brussels</div>
+                        <div>Leuven</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="CY-card">
+                    <h3><a href="http://web.cut.ac.cy/iaeste/">Cyprus</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Cyprus University of Technology (NC)</div>
+                        <div> University of Nicosia</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="NO-card">
+                    <h3><a href="http://iaeste.no">Norway</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>LC Ås</div>
+                        <div>LC Bergen</div>
+                        <div>LC Grimstad</div>
+                        <div>LS Oslo</div>
+                        <div>LC Stavanger</div>
+                        <div>LC Tromsø</div>
+                        <div>LC Trondheim</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="DK-card">
+                    <h3><a href="https://www.facebook.com/IAESTE.DK">Denmark</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Odense</div>
+                        <div>DTU in Copenhagen</div>
+                    </div>
+                </div>
+
+
+                <div class="country-list">
+                    <div class="country" id="AT">Austria</div>
+                    <div class="country" id="BA">Bosnia and Herzegovina</div>
+                    <div class="country" id="HR">Croatia</div>
+                    <div class="country" id="CZ">Czech Republic</div>
+
+                    <div class="country" id="DE">Germany</div>
+                    <div class="country" id="GR">Greece</div>
+                    <div class="country" id="PL">Poland</div>
+                    <div class="country" id="MK">Macedonia</div>
+
+                    <div class="country" id="HU">Hungary</div>
+                    <div class="country" id="IS">Iceland</div>
+                    <div class="country" id="IE">Ireland</div>
+                    <div class="country" id="PT">Portugal</div>
+
+                    <div class="country" id="RO">Romania</div>
+                    <div class="country" id="RS">Serbia</div>
+                    <div class="country" id="SK">Slovakia</div>
+                    <div class="country" id="SI">Slovenia</div>
+
+                    <div class="country" id="ES">Spain</div>
+                    <div class="country" id="MT">Malta</div>
+                    <div class="country" id="FR">France</div>
+                    <div class="country" id="NL">Netherlands</div>
+                    <div class="country" id="BY">Belarus</div>
+                    <div class="country" id="SCOT">Scotland</div>
+                    <div class="country" id="ENGL">England</div>
+                    <div class="country" id="SE">Sweden</div>
+                    <div class="country" id="CH">Switzerland</div>
+                    <div class="country" id="BE">Belgium</div>
+                    <div class="country" id="CY">Cyprus</div>
+                    <div class="country" id="NO">Norway</div>
+                    <div class="country" id="DK">Denmark</div>
+
+                    <div class="country" id="TR2">Turkey</div>
+                    <div class="country" id="RU2">Russia</div>
+                </div>
+            </div>
+
             <div class="continent-card" id="africa-card">
                 <span class="continent-name">Africa</span>
+                <div class="LC-card" id="KE-card">
+                    <h3><a href="https://m.facebook.com/iaestekenya254/">Kenya</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>DKUT(CI)</div>
+                        <div>JKUAT(CI)</div>
+                        <div>MUT(CI)</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="TZ-card">
+                    <h3><a href="https://m.facebook.com/iaestekenya254/">Tanzania</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div><a href="https://www.out.ac.tz/wp-content/uploads/2019/02/IAESTE-Scholarship-2019.pdf"></a>The
+                        Open University of Tanzania</div>
+                </div>
+                <div class="LC-card" id="TN-card">
+                    <h3><a href="http://www.iaeste.tn/tunisia/">Tunisia</a></h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>National Engineering School of Tunis</div>
+                </div>
+                <div class="LC-card" id="EG-card">
+                    <h3><a
+                            href="https://www.facebook.com/pages/category/Community-College/IAESTE-Egypt-197820290980652/">Egypt</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+                <div class="LC-card" id="GM-card">
+                    <h3><a href="https://www.facebook.com/IAESTE.Gambia/">Gambia</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>Microtech Institute of Multimedia & Technology(CI)</div>
+                </div>
+                <div class="LC-card" id="GH-card">
+                    <h3><a href="https://www.facebook.com/IAESTE-Ghana-544366045650323/">Ghana</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Kumasi</div>
+                        <div>KNUST(CI)</div>
+                    </div>
+                </div>
+
+                <div class="country-list">
+                    <div class="country" id="KE">Kenya</div>
+                    <div class="country" id="TZ">Tanzania</div>
+                    <div class="country" id="TN">Tunisia</div>
+                    <div class="country" id="EG">Egypt</div>
+                    <div class="country" id="GM">Gambia</div>
+                    <div class="country" id="GH">Ghana</div>
+                </div>
             </div>
+
             <div class="continent-card" id="australia-card">
                 <span class="continent-name">Australia</span>
+
+                <div class="LC-card" id="AU-card">
+                    <h3><a href="https://www.iaeste.org.au/">Australia</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                    <div>
+                        <div>Melbourne</div>
+                        <div>Sydney (under construction)</div>
+                        <div>Canberra (under construction)</div>
+                        <div>Geelong (under construction)</div>
+                        <div>Adelaide (Under construction)</div>
+                    </div>
+                </div>
+                <div class="LC-card" id="NZ-card">
+                    <h3><a href="https://iaeste.co.nz">New Zealand</a>
+                    </h3>
+                    <div class="card-close-button" onclick="toggleCard(this,false)">X</div>
+                </div>
+
+                <div class="country-list">
+                    <div class="country" id="AU">Australia</div>
+                    <div class="country" id="NZ">New Zealand</div>
+                </div>
             </div>
         </div>
-
     </section>
 
     <section id="once-you-return">
-        <h3>Once You Return</h3>
+        <h3 id="once-you-return-header">Once You Return</h3>
         <p>
             Get in touch with us, we would love to hear all about your experience working abroad!
         </p>

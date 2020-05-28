@@ -321,7 +321,7 @@ How to Apply
   padding-left: 1vw;
 }
 
-.LC-Card {
+.LC-card {
   display: none;
   position: relative;
   top: 0;
@@ -404,20 +404,7 @@ How to Apply
   }
 }
 
-.LC-list {
-  /* Toggles to display:flex on hover or select */
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.LC-list > a > div {
-  font-size: 0.9em;
-}
-.LC-list > a {
-  text-decoration: none;
-}
-
+/* LC Card  */
 .card-close-button {
   position: absolute;
   top: 5%;
@@ -426,9 +413,15 @@ How to Apply
 }
 
 /* 
+  Once-you-return 
+*/
+#once-you-return-header {
+  text-align: center;
+}
+
+/* 
   Footer
 */
-
 #footer {
   padding: 2% 15%;
   color: white;

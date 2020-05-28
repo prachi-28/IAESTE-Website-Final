@@ -70,11 +70,6 @@ window.onload = function () {
   }
 
   for (country of countries) {
-    country.addEventListener("touchstart", (event) => {
-      if (event.target.children[1].className == "LC-list")
-        changeCountry(event.target.children[1]);
-    });
-
     country.addEventListener("click", (event) => {
       toggleCard(event.target, true);
     });
@@ -101,17 +96,6 @@ changeContinent = (newContinent) => {
   document.getElementById(`${selectedContinent}-card`).style.display = "flex";
 };
 
-changeCountry = (newCountry) => {
-  if (showCountry) {
-    for (l of list) {
-      l.style.display = "none";
-    }
-  } else {
-    newCountry.style.display = "flex";
-  }
-  showCountry = !showCountry;
-};
-
 let slideIndex = 1;
 
 window.onresize = () => {
@@ -129,8 +113,8 @@ window.onresize = () => {
 // };
 
 /*
-  elem --> triggering HTML element, the id of which decides which LC-Card to display/hide   
-  showCard --> boolean that indicates whether to display/hide the respective LC-Card
+  elem --> triggering HTML element, the id of which decides which LC-card to display/hide   
+  showCard --> boolean that indicates whether to display/hide the respective LC-card
 */
 toggleCard = (elem, showCard) => {
   if (showCard) {
