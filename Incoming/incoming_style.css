@@ -371,7 +371,9 @@ Testimonial Section ------------->
   background-color: #717171;
 }
 
-/* Footer */
+/* 
+  Footer
+*/
 #footer {
   padding: 2% 15%;
   color: white;
@@ -391,4 +393,10 @@ Testimonial Section ------------->
 
 .figures {
   font-size: 1.5rem;
+}
+
+#iecse_logo {
+  height: 0.9rem;
+  vertical-align: baseline;
+  margin-left: 2px;
 }

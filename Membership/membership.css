@@ -1,273 +1,235 @@
-#title
-{
-	background-color:  #002c42;
-	color: #fff;
+:root {
+  --main-blue: #002c42;
+}
+#title {
+  background-color: #002c42;
+  color: #fff;
 }
 
-h1
-{
-	font-family: 'Montserrat-Black', sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
+h1 {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.container-fluid
-{
-    padding: 3% 15% 0%;
+.container-fluid {
+  padding: 3% 15% 0%;
 }
 
-body
-{
-	font-family: 'Montserrat-Black', sans-serif;
+body {
+  font-family: "Montserrat-Black", sans-serif;
 }
 
-.navbar-brand
-{
-	font-family: "ubuntu";
-	font-size: 2rem;
-	line-height: 1.5;
-	font-weight: bold;
-	position: relative;
-	right: 100px;
-
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+  position: relative;
+  right: 100px;
 }
 
-.navbar
-{
-	padding: 0 0 2.5rem;
+.navbar {
+  padding: 0 0 2.5rem;
 }
 
 .nav-item {
-	padding: 0 3px;
+  padding: 0 3px;
 }
 
-.nav-link
-{
-	font-size: 1.2rem;
-	font-family: 'Montserrat-Light', sans-serif;
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light", sans-serif;
 }
 
+.title-image {
+  width: 60%;
 
-.title-image
-{
-	width: 60%;
-	
-	position: absolute;
-	right: 20%;
-
+  position: absolute;
+  right: 20%;
 }
 
-.logo
-{
-	height:06px;
-	width: 200px;
-	position: relative;
-	left:100px;
+.logo {
+  height: 06px;
+  width: 200px;
+  position: relative;
+  left: 100px;
 }
 
-
-#features
-{
-	padding: 7% 15%;
-	background-color: #fff;
-	position: relative;
-	z-index: 1;
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
-.feature-box
-{
-	text-align: center;
-	padding: 5%;
+.feature-box {
+  text-align: center;
+  padding: 5%;
 }
 
-h3
-{
-	font-family: 'Montserrat-Bold', sans-serif; 
+h3 {
+  font-family: "Montserrat-Bold", sans-serif;
 }
 
-p
-{
-	color: #8f8f8f;
+p {
+  color: #8f8f8f;
 }
 
-.icon
-{
-	color:  #002c42;
-	
-	margin-bottom: 1rem;
-	
+.icon {
+  color: #002c42;
+
+  margin-bottom: 1rem;
 }
 
-
-
-.icon:hover
-{
-	color: #0d2f40 ;
+.icon:hover {
+  color: #0d2f40;
 }
 
-#testimonials
-{
-	
-	text-align: center;
-	background-color:#002c42;
-	color: #fff;
+#testimonials {
+  text-align: center;
+  background-color: #002c42;
+  color: #fff;
 }
 
-h2
-{
-	font-family: 'Montserrat-Bold', sans-serif; 
-	font-size: 2rem;
-	line-height: 1.5;
+h2 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
-.testimonial-image
-{
-	width:10%;
-	border-radius: 100%;
-	margin: 20px;
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
 }
 
-#press
-{
- background-color: #fff;
- text-align: center;
- padding-bottom: 3%
+#press {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 3%;
 }
 
-.press-logo
-{
-	width: 15%;
-	margin: 20px 20px 20px 50px;
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 20px 50px;
 }
 
-.carousel-item
-{
-	padding: 7% 15%;
+.carousel-item {
+  padding: 7% 15%;
 }
-
 
 #membership {
-    background-color: #002c42;
+  background-color: #002c42;
 }
 
-.O-I-button
-{
-	margin: 5% 3% 5% 0;
+.O-I-button {
+  margin: 5% 3% 5% 0;
 }
-
 
 #membership #header-1 {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
-    padding: 30px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
 }
 
 #membership #header-2 {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
-    padding: 10px 50px 0px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 50px 0px;
 }
 
 #membership #header-2 img {
-    padding: 20px;
+  padding: 20px;
 }
 
-#membership #iaeste-india {   
-    height: 60px;
+#membership #iaeste-india {
+  height: 60px;
 }
 
 #membership #line {
-    background-color: #ffffff;
-    margin: auto 50px;
-    height: 60px;
-    width: 3px;
+  background-color: #ffffff;
+  margin: auto 50px;
+  height: 60px;
+  width: 3px;
 }
 
 #membership #exchange-year {
-    margin: 20px;
-    height: 30px;
+  margin: 20px;
+  height: 30px;
 }
 
 #membership #body {
-    background-color: #0d4663;
-    padding: 30px auto;
-    z-index: 0;
+  background-color: #0d4663;
+  padding: 30px auto;
+  z-index: 0;
 }
 
 #membership #body #back {
-    position: absolute;
-    width: 40%;
-    left: 30%;
-    margin: 20px;
-    z-index: 1;
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  margin: 20px;
+  z-index: 1;
 }
 
-#membership  {
-    z-index: 1;
-    padding: 25px;
-    font-size: 50px;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Avenir';
+#membership {
+  z-index: 1;
+  padding: 25px;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Avenir";
 }
 
 #membership #stats {
-    z-index: 1;
-    display: grid;
-    color: #ffffff;
-    font-family: 'Avenir';
-    text-align: center;
-    grid-template-columns: auto auto auto auto;
-    padding-bottom: 10px;
+  z-index: 1;
+  display: grid;
+  color: #ffffff;
+  font-family: "Avenir";
+  text-align: center;
+  grid-template-columns: auto auto auto auto;
+  padding-bottom: 10px;
 }
 #membership #stats div {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 #membership #stats h3 {
-    padding: 0;
-    margin: 0;
-    font-size: 50px;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
 }
 
-#membership #stats p{
-    padding: 0;
-    margin: 0;
-    font-size: 30px;
+#membership #stats p {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
 }
-.abc
-{
-	position: relative;
-	left:40px;
-}
-
-
-#footer
-{
- padding: 7% 15%;
- text-align: center;
-
+.abc {
+  position: relative;
+  left: 40px;
 }
 
-.social-icon
-{
-	margin: 20px 10px;
+#footer {
+  padding: 7% 15%;
+  text-align: center;
 }
 
-.footer_text
-{
-	font-size: 1rem;
+.social-icon {
+  margin: 20px 10px;
 }
 
-.figures
-{
-	font-size: 1.5rem;
+.footer_text {
+  font-size: 1rem;
 }
 
-
+.figures {
+  font-size: 1.5rem;
+}
 
 /* unvisited link */
 a:link {
@@ -279,110 +241,129 @@ a:visited {
   color: #fff;
 }
 
-
-.figures
-{
-	color: #fff;
-	font-size: 2rem;
-}
-
-.figuresText
-{
+.figures {
   color: #fff;
-	font-size: 2rem;	
+  font-size: 2rem;
 }
 
-.logo
-{
-	height: 50px;
-	width: 200px;
+.figuresText {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.logo {
+  height: 50px;
+  width: 200px;
 }
 
 .social-icon {
-	text-decoration: none;
-	
+  text-decoration: none;
 }
 
-.social-icon.icon:hover{
-	text-decoration-line: none;
-	font-size:10px
+.social-icon.icon:hover {
+  text-decoration-line: none;
+  font-size: 10px;
 }
 
 i {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 #membership-section-1 {
-    padding: 2% 2%;
-    background: #002c42;
-    color: white;
+  padding: 2% 2%;
+  background: #002c42;
+  color: white;
 }
 
 .membership-content-1 {
-    font-family: 'Raleway', sans-serif;
-    margin: 2% 0;
-    width: 100%;
+  font-family: "Raleway", sans-serif;
+  margin: 2% 0;
+  width: 100%;
 }
 
-
 .row > .col-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .row > .col-3 > button {
-    font-size: 160%;
-    color: #002c42;
-    border: none;
-    border-radius: 30px;
-    padding: 0 0%;
-    cursor: pointer;
+  font-size: 160%;
+  color: #002c42;
+  border: none;
+  border-radius: 30px;
+  padding: 0 0%;
+  cursor: pointer;
 }
 
 #membership-section-2 {
-    padding: 2% 2%;
-    background: white;
-    color: #002c42;
+  padding: 2% 2%;
+  background: white;
+  color: #002c42;
 }
 
 .membership-content-2 {
-    font-family: 'Raleway', sans-serif;
-    margin: 2% 0 2% 3%;
-    width: fit-content;
+  font-family: "Raleway", sans-serif;
+  margin: 2% 0 2% 3%;
+  width: fit-content;
 }
 
 .membership-button-2 {
-    font-size: 160%;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 0 0%;
-    cursor: pointer;
-    background-color: #002c42;
-    padding: 0 15%;
-    
+  font-size: 160%;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0 0%;
+  cursor: pointer;
+  background-color: #002c42;
+  padding: 0 15%;
 }
 .total-content {
-    display: flex;
-    
+  display: flex;
 }
 
 .total-content-2 {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
 }
 
 .forMargin {
+  margin: 35% 0 16% 0;
+}
+
+@media screen and (max-width: 700px) and (min-width: 300px) {
+  .forMargin {
     margin: 35% 0 16% 0;
+  }
 }
 
-@media  screen and (max-width: 700px) and (min-width: 300px){
-    .forMargin {
-        margin: 35% 0 16% 0;
-    }
-
+/* 
+  Footer
+*/
+#footer {
+  padding: 2% 15%;
+  color: white;
+  background-color: var(--main-blue);
+  text-align: center;
 }
 
+.social-icon {
+  color: ;
+  margin: 20px 15px;
+}
 
+.footer_text {
+  font-size: 1rem;
+  color: #8f8f8f;
+}
+
+.figures {
+  font-size: 1.5rem;
+}
+
+#iecse_logo {
+  height: 0.9rem;
+  vertical-align: baseline;
+  margin-left: 2px;
+}

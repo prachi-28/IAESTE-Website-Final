@@ -5,6 +5,7 @@
   --map-gradient-outer: #002385;
   --hover-colour: white;
   --list-dropdown: #003d5c;
+  --section-header: 600;
 }
 
 html,
@@ -94,6 +95,7 @@ h3 {
 }
 #overview-content > h3 {
   margin-bottom: 20px;
+  font-weight: var(--section-header);
 }
 #overview-content > p {
   backdrop-filter: blur(1px);
@@ -117,6 +119,7 @@ How to Apply
 }
 #how-to-apply-header {
   margin-bottom: 4vh;
+  font-weight: var(--section-header);
   text-align: center;
 }
 #step-wise-guide {
@@ -136,6 +139,7 @@ How to Apply
 }
 #testimonial-section > h3 {
   padding: 0 4vw;
+  font-weight: var(--section-header);
 }
 
 #testimonials {
@@ -204,6 +208,7 @@ How to Apply
 
 #rules-header {
   /* font-size: 1.4em; */
+  font-weight: var(--section-header);
   margin: 0;
   text-align: center;
 }
@@ -245,6 +250,7 @@ How to Apply
 #map-header {
   text-align: center;
   padding: 4vh 4vw;
+  font-weight: var(--section-header);
 }
 #map-section {
   text-align: center;
@@ -309,7 +315,7 @@ How to Apply
   /* height: 100%; */
   color: black;
 
-  /* Columns are added to the 4 row structure as number of countries increase, scrolls horizontally */
+  /* Columns are added to the 4 row structure. As number of columns increase, scroll horizontally */
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-gap: 0vh 1vw;
@@ -341,17 +347,6 @@ How to Apply
 .country:hover {
   border-radius: 4px 4px 0 0;
   z-index: 15;
-}
-
-.country:hover .LC-list {
-  display: flex;
-}
-
-/* Allows the .LC-list for the bottom row to display upward to prevent vertical overflow */
-.country:nth-of-type(4n) > .LC-list {
-  bottom: 100%;
-  top: initial;
-  border-radius: 4px 4px 0 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -426,6 +421,7 @@ How to Apply
 */
 #once-you-return-header {
   text-align: center;
+  font-weight: var(--section-header);
 }
 
 /* 
@@ -450,4 +446,10 @@ How to Apply
 
 .figures {
   font-size: 1.5rem;
+}
+
+#iecse_logo {
+  height: 0.9rem;
+  vertical-align: baseline;
+  margin-left: 2px;
 }
