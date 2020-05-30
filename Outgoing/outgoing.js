@@ -2,7 +2,7 @@ let selectedContinent = "asia";
 let showRules = false;
 let showGeneral = false;
 let showCountry = false;
-let list = [];
+let slideIndex = 1;
 
 window.onload = function () {
   const continents = document.getElementsByClassName("land");
@@ -44,11 +44,8 @@ window.onload = function () {
   });
 
   /*
-  *
   Event listeners for map section components
-  *
   */
-  list = document.getElementsByClassName("LC-list");
 
   for (continent of continents) {
     //Change fill colour onClick
@@ -79,12 +76,15 @@ window.onload = function () {
   showSlides(slideIndex);
 };
 
-// window.onresize = () => {
-//   // for (l of list) {
-//   //   l.style.display = "none";
-//   // }
-//   showCountry = false;
-// };
+window.onresize = () => {
+  showCountry = false;
+
+  const testimonial = document.getElementsByClassName("testimonial-wrapper");
+  for (t of testimonial) {
+    t.style.display = "none";
+  }
+  showSlides(slideIndex);
+};
 
 changeContinent = (newContinent) => {
   //reset fill & display of previous continent
@@ -96,39 +96,25 @@ changeContinent = (newContinent) => {
   document.getElementById(`${selectedContinent}-card`).style.display = "flex";
 };
 
-let slideIndex = 1;
-
-window.onresize = () => {
-  showCountry = false;
-
-  const testimonial = document.getElementsByClassName("testimonial-wrapper");
-  for (t of testimonial) {
-    t.style.display = "none";
-  }
-  showSlides(slideIndex);
-};
-
-// window.onload = function () {
-//   showSlides(slideIndex);
-// };
-
 /*
   elem --> triggering HTML element, the id of which decides which LC-card to display/hide   
   showCard --> boolean that indicates whether to display/hide the respective LC-card
 */
 toggleCard = (elem, showCard) => {
   if (showCard) {
-    // console.log(elem.id);
+    // If no information for that country exists, return
+    if (!document.getElementById(`${elem.id}-card`)) return;
     document.getElementById(`${elem.id}-card`).style.display = "block";
-    document.getElementsByClassName("country-list")[0].style.display = "none";
+    document.getElementById(`${selectedContinent}-country-list`).style.display =
+      "none";
   } else {
-    // console.log(elem.parentNode.id);
     document.getElementById(elem.parentNode.id).style.display = "none";
-    document.getElementsByClassName("country-list")[0].style.display = "grid";
+    document.getElementById(`${selectedContinent}-country-list`).style.display =
+      "grid";
   }
 };
 
-// Carousel --------------->
+// Testimonial Carousel --------------->
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
