@@ -55,7 +55,7 @@ body {
 
 /*responsive navbar*/
 
-.main {
+.main  {
   position: relative;
   background-image: url("assets/images/landing-back.jpg");
   min-height: 100vh;
