@@ -224,6 +224,7 @@ How to Apply
   float: right;
   text-decoration: none;
 }
+
 .minus:after {
   content: "\f068";
   font-family: FontAwesome;
@@ -427,29 +428,88 @@ How to Apply
 /* 
   Footer
 */
+
 #footer {
+  margin: auto;
   padding: 2% 15%;
-  color: white;
-  background-color: var(--main-blue);
-  text-align: center;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  font-size: 0.9em;
+}
+@media only screen and (max-width: 768px) {
+  #footer {
+    padding: 2% 2%;
+  }
 }
 
+#column-left {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding-right: 3px;
+}
+
+.footer-field {
+  display: grid;
+  grid-template-columns: 30px auto;
+  margin: 12px 0;
+}
+.footer-icon {
+  grid-column: 1/2;
+  font-weight: normal;
+  font-size: 20px;
+  align-self: center;
+}
+.footer-info {
+  grid-column: 2/2;
+  margin: 0 0 0 15px;
+  display: block;
+}
+
+#column-right {
+  grid-column: 2;
+  margin: 12px 0;
+}
+#footer-lc-list {
+  margin: auto;
+}
+#footer-lc-list a {
+  text-decoration: none;
+  color: white;
+}
+#footer-lc-list a:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
 .social-icon {
   color: white;
-  margin: 20px 15px;
+  margin: 20px 10px 20px 0;
 }
 
+#footer-bottom {
+  grid-column: 1/3;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
 .footer_text {
-  font-size: 1rem;
   color: #8f8f8f;
+  margin: 0;
+  padding: 2px;
+  text-align: center;
 }
-
-.figures {
-  font-size: 1.5rem;
-}
-
 #iecse_logo {
-  height: 0.9rem;
+  height: 0.8rem;
   vertical-align: baseline;
   margin-left: 2px;
+}
+
+/* unvisited link */
+a:link {
+  color: #fff;
+}
+
+/* visited link */
+a:visited {
+  color: #fff;
 }
