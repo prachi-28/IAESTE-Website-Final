@@ -21,6 +21,7 @@ body {
   font-family: "Montserrat-Black", sans-serif;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .navbar-brand {

@@ -3,7 +3,7 @@
 }
 
 #title {
-  background-color: #002c42;
+  /* background-color: #002c42; */
   color: #fff;
 }
 
@@ -21,6 +21,7 @@ html,
 body {
   font-family: "Montserrat-Black", sans-serif;
   background-color: var(--main-blue);
+  scroll-behavior: smooth;
 }
 
 /*Navbar style*/
@@ -50,20 +51,21 @@ body {
   padding-left: 10px;
 }
 
-.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-  /*background: #dcdde1;*/
-  /*color: #262626;*/
-}
-
 /*responsive navbar*/
+
+/* Wraps .main and .title sections */
+#landing-main {
+  position: relative;
+  background-image: url("assets/images/landing-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .main {
   position: relative;
-  background-image: url("assets/images/landing-back.jpg");
   min-height: 100vh;
   max-height: 105vh;
-  background-size: cover;
-  background-position: center;
   padding: 220px 0 200px;
 }
 
