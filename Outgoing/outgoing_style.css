@@ -238,7 +238,6 @@ How to Apply
   margin: 0;
   display: grid;
   overflow: visible;
-
   grid-template-columns: 40% 60%;
 }
 
