@@ -3,6 +3,7 @@ let showRules = false;
 let showGeneral = false;
 let showCountry = false;
 let slideIndex = 1;
+let slideIncrement;
 
 window.onload = function () {
   const continents = document.getElementsByClassName("land");
@@ -74,6 +75,9 @@ window.onload = function () {
 
   changeContinent(selectedContinent);
   showSlides(slideIndex);
+
+  //Move to the next slide after 14s
+  slideIncrement = setInterval(() => plusSlides(1), 14000);
 };
 
 window.onresize = () => {
