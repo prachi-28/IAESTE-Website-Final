@@ -8,6 +8,7 @@
   --section-header: 600;
 }
 
+/* Content */
 html,
 body {
   scroll-behavior: smooth;
@@ -108,7 +109,6 @@ How to Apply
 /* 
   Testimonial Section -------------> 
 */
-
 #testimonial-section {
   padding: 4vh 1vw;
   text-align: center;

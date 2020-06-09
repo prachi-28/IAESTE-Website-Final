@@ -6,9 +6,6 @@ let slideIndex = 1;
 let slideIncrement;
 
 window.onload = function () {
-  console.log("Loaded");
-  document.getElementById("loading-icon").style.display = "none";
-
   const continents = document.getElementsByClassName("land");
   const countries = document.getElementsByClassName("country");
 

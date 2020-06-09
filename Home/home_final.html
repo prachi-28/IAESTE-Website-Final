@@ -24,6 +24,9 @@
 </head>
 
 <body>
+  <div class="loader">
+    <img src="assets/spinner.gif" alt="Loading..." />
+  </div>
 
   <div id="landing-main">
     <section id="title">
@@ -254,6 +257,12 @@
           href="https://iecsemanipal.com/"><img src="assets/iecse_logo.svg" alt="iecse" id="iecse_logo" /></a></p>
     </div>
   </footer>
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden"; // class "loader hidden"
+    });
+  </script>
 </body>
 
 </html>
