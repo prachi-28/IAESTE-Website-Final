@@ -13,9 +13,6 @@ h1 {
   line-height: 1.5;
 }
 
-.container-fluid {
-  padding: 3% 15% 0%;
-}
 
 body {
   font-family: "Montserrat-Black", sans-serif;
@@ -24,25 +21,38 @@ body {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  padding-right: 0px!important;
+  padding: 50px 0;
+}
 .navbar-brand {
   font-family: "ubuntu";
   font-size: 2rem;
   line-height: 1.5;
-  font-weight: bold;
+
   position: relative;
-  right: 100px;
+
 }
 
-.navbar {
-  padding: 0 0 2.5rem;
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-brand {
+  color: #dcdde1;
 }
 
 .nav-item {
-  padding: 0 3px;
+  
+  text-transform: uppercase;
+ 
 }
 
+
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Montserrat-Light", sans-serif;
 }
 
@@ -53,12 +63,6 @@ body {
   right: 20%;
 }
 
-.logo {
-  height: 06px;
-  width: 200px;
-  position: relative;
-  left: 100px;
-}
 
 #features {
   padding: 7% 15%;
@@ -88,7 +92,7 @@ p {
 
 section {
   scroll-behavior: smooth;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .icon:hover {
@@ -337,6 +341,7 @@ a:visited {
   border-radius: 30px;
   padding: 0 0%;
   cursor: pointer;
+  margin-bottom: 1rem!important;
 }
 
 .row > .col-3 {
@@ -366,7 +371,19 @@ a:visited {
   width: fit-content;
 }
 
-.membership-button-2 {
+.membership-button-2  {
+  font-size: 152%;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #002c42;
+  padding: 0 15%;
+  text-decoration: none;
+}
+
+.offer {
   font-size: 152%;
   color: white;
   text-align: center;
@@ -430,6 +447,18 @@ a:visited {
   background-color: #002c42;
   width: 100%;
   color: white;
+}
+
+.offerTypes {
+
+  display: flex;
+  flex-direction: column;
+  padding: 2% 3% 0% 3%;
+  width: 100%;
+  margin: 0;
+  color: #002c42;
+
+
 }
 
 @media screen and (max-width: 700px) and (min-width: 300px) {
