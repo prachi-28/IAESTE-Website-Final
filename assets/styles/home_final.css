@@ -87,7 +87,7 @@ body {
 /* Wraps .main and .title sections */
 #landing-main {
   position: relative;
-  background-image: url("assets/images/landing-back.jpg");
+  background-image: url("../images/landing-back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
