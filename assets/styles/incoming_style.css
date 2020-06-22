@@ -72,14 +72,14 @@ body {
 .row {
   padding-bottom: 30px;
 }
-#video-wrapper {
+/*#video-wrapper {
   text-align: center;
 }
 .video {
   width: 100%;
   border: none;
   margin: auto;
-}
+}*/
 @media only screen and (max-width: 992px) {
   .video {
     margin-top: 30px;
@@ -104,6 +104,15 @@ NamasteManipal Content------------->
 #namaste-manipal-content {
   text-align: center;
   padding: 3vh 2% 1vh 2%;
+}
+
+.nmIntro {
+  padding-top: 0rem!important;
+  margin-left: 20rem!important;
+  margin-right: 15rem!important;
+  margin-bottom: 5rem!important;
+  color: #002c42;
+  font-size: 1.3rem;
 }
 #nm-logo {
   margin-top: 20px;
