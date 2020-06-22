@@ -72,14 +72,14 @@ body {
 .row {
   padding-bottom: 30px;
 }
-/*#video-wrapper {
+#video-wrapper {
   text-align: center;
 }
 .video {
   width: 100%;
   border: none;
   margin: auto;
-}*/
+}
 @media only screen and (max-width: 992px) {
   .video {
     margin-top: 30px;
@@ -90,6 +90,9 @@ body {
   .video {
     margin-top: 30px;
     width: 85%;
+  }
+  .nmIntro {
+    display: none;
   }
 }
 @media only screen and (max-width: 425px) {
