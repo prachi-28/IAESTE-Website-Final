@@ -18,7 +18,14 @@ body {
   width: 100%;
   background-color: var(--main-blue);
   color: white;
+  overflow-x: hidden;
 }
+
+.logo {
+  width: 4rem!important;
+  height: 4rem!important;
+}
+
 
 section {
   padding: 4vh 5vw;

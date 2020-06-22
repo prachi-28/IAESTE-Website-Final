@@ -38,6 +38,11 @@
   color: #fff;
 }
 
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
 h1 {
   font-family: "Montserrat-Black", sans-serif;
   font-size: 1rem;

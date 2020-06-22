@@ -16,6 +16,11 @@ body {
   overflow-x: hidden;
 }
 
+.logo {
+  width: 4rem!important;
+  height: 4rem!important;
+}
+
 #title {
   background-color: var(--main-blue);
   color: #fff;
