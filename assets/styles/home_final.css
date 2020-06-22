@@ -134,6 +134,7 @@ body {
 @media screen and (min-width: 0px) and (max-width: 851px) {
   #landing-front {
     display: block;
+    padding-top: 7rem!important;
     height: 30vh;
     width: 85vw;
   }
@@ -143,6 +144,10 @@ body {
     height: 30vh;
     width: 80vw;
     bottom: 160px;
+  }
+
+  .container {
+    height: 20vh!important;
   }
 
   /*last section responsive*/

@@ -341,6 +341,7 @@ u {
   text-align: center;
 }
 
+
 /* 
   Footer
 */
@@ -354,7 +355,8 @@ u {
   background: var(--main-blue);
   color: white;
 }
-@media only screen and (max-width: 768px) {
+
+
   #footer {
     padding: 2% 2%;
   }
@@ -381,7 +383,7 @@ u {
 }
 .footer-info {
   grid-column: 2/2;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 15px!important;
   display: block;
 }
 
@@ -430,4 +432,26 @@ u {
 /* visited link */
 .footer-link:visited {
   color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+   .landingtext {
+     font-size: medium!important;
+     margin-left: 1rem!important;
+     text-align: left;
+   }
+
+   .lcHeading {
+     font-size: 1.2rem;
+     font-weight: bold;
+
+   }
+   #lc {
+     font-size: 0.4rem!important;
+     padding-right: 0!important;
+     padding-left: 0!important;
+   }
+
+   
 }
