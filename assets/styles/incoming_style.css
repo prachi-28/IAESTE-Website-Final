@@ -210,13 +210,14 @@ NamasteManipal Cards------------->
   border: 1px solid #333;
   font-size: 1em;
   font-weight: 900;
-  color: #333;
+  color: #002c42!important;
   text-decoration: none;
   margin: auto;
 }
 .read-more:hover {
  
-  background: #333;
+  /*background: #333;*/
+  border: 1px solid #002c42;
   text-decoration: none;
 }
 
